@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf7f0">
+  <meta name="description" content="各行・列・色の領域に猫を1匹ずつ。ブラウザで遊べる猫のロジックパズル。">
+  <title>ねこの居場所 | Cat Queens</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <header><span class="eyebrow">CAT QUEENS · LOGIC PUZZLE</span><h1>ねこの居場所<span aria-hidden="true">🐈</span></h1><p>みんなに、ちょうどいい距離を。</p></header>
+    <details class="guide">
+      <summary>ルール・操作方法<span class="guide-show">を表示</span><span class="guide-hide">を非表示</span></summary>
+      <div class="guide-content"><h2>猫を置く、3つのルール</h2><ol><li>各行・各列に、猫は<strong>1匹ずつ</strong>。</li><li>同じ色の領域にも、猫は<strong>1匹ずつ</strong>。</li><li>猫同士は<strong>隣り合わない</strong>。斜めもNG。</li></ol><div class="how"><p><b>タップ</b> 空白 ↔ ×</p><p><b>ダブルタップ</b> 空白に猫を置く / 猫を外す</p><p><b>空白からスワイプ</b> 通った空白に ×</p><p><b>×からスワイプ</b> 通った × を空白に</p></div><p class="note">×には猫を置けません。先にタップで空白に戻してください。<br>色の領域は太い境界線と小さな番号でも見分けられます。</p></div>
+    </details>
+    <section class="game" aria-label="猫のパズル">
+      <div class="toolbar"><label for="size">盤面 <select id="size"></select></label><div class="puzzle-actions"><button id="new" class="primary">新しいパズル</button><button id="reset">盤面クリア</button></div></div>
+      <div class="meta"><span id="count">猫 0 / 5</span><span id="status" role="status" aria-live="polite">準備中…</span></div>
+      <div id="board" role="group" aria-label="パズル盤面" aria-busy="true"></div>
+      <div id="success" hidden role="status"><strong>みんなの居場所が見つかった！</strong><span>クリアおめでとう 🐾</span></div>
+      <div class="actions"><button id="undo" disabled>↶ ひとつ戻す</button></div>
+    </section>
+    <footer>ひと息ついて、ひとマスずつ。</footer>
+  </main>
+  <script src="./js/solver.js"></script>
+  <script src="./js/generator.js"></script>
+  <script src="./js/game.js"></script>
+  <script src="./js/ui.js"></script>
+</body>
+</html>
