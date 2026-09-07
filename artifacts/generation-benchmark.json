@@ -1,0 +1,4451 @@
+{
+  "environment": {
+    "date": "2026-09-07T15:46:35.695Z",
+    "node": "v24.15.0",
+    "cpu": "AMD Ryzen 7 9800X3D 8-Core Processor           ",
+    "platform": "win32"
+  },
+  "rows": [
+    {
+      "mode": "RandomSnake",
+      "seed": 1,
+      "ok": true,
+      "elapsedMs": 67.21549999999999,
+      "metrics": {
+        "elapsedMs": 66.9075,
+        "evaluations": 148,
+        "nodes": 47202,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 2,
+      "ok": true,
+      "elapsedMs": 33.501700000000014,
+      "metrics": {
+        "elapsedMs": 33.47659999999999,
+        "evaluations": 165,
+        "nodes": 46973,
+        "attempts": 1,
+        "accepted": 88,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 45,
+        "height": 12,
+        "width": 12,
+        "boundary": 90
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 3,
+      "ok": true,
+      "elapsedMs": 99.74350000000001,
+      "metrics": {
+        "elapsedMs": 99.73209999999999,
+        "evaluations": 160,
+        "nodes": 110916,
+        "attempts": 1,
+        "accepted": 87,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 46,
+        "height": 12,
+        "width": 11,
+        "boundary": 94
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 4,
+      "ok": true,
+      "elapsedMs": 31.80620000000002,
+      "metrics": {
+        "elapsedMs": 31.7954,
+        "evaluations": 149,
+        "nodes": 33234,
+        "attempts": 1,
+        "accepted": 81,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 52,
+        "height": 12,
+        "width": 12,
+        "boundary": 100
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 5,
+      "ok": true,
+      "elapsedMs": 18.1199,
+      "metrics": {
+        "elapsedMs": 18.110400000000027,
+        "evaluations": 151,
+        "nodes": 19976,
+        "attempts": 1,
+        "accepted": 79,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 54,
+        "height": 12,
+        "width": 12,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 6,
+      "ok": true,
+      "elapsedMs": 6.563699999999983,
+      "metrics": {
+        "elapsedMs": 6.55680000000001,
+        "evaluations": 148,
+        "nodes": 12012,
+        "attempts": 1,
+        "accepted": 84,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 49,
+        "height": 12,
+        "width": 12,
+        "boundary": 96
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 7,
+      "ok": true,
+      "elapsedMs": 24.457899999999995,
+      "metrics": {
+        "elapsedMs": 24.44530000000003,
+        "evaluations": 158,
+        "nodes": 21859,
+        "attempts": 1,
+        "accepted": 80,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 53,
+        "height": 11,
+        "width": 12,
+        "boundary": 108
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 8,
+      "ok": true,
+      "elapsedMs": 28.98660000000001,
+      "metrics": {
+        "elapsedMs": 28.973799999999983,
+        "evaluations": 143,
+        "nodes": 26557,
+        "attempts": 1,
+        "accepted": 68,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 65,
+        "height": 12,
+        "width": 12,
+        "boundary": 120
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 9,
+      "ok": true,
+      "elapsedMs": 21.154499999999985,
+      "metrics": {
+        "elapsedMs": 21.130800000000022,
+        "evaluations": 152,
+        "nodes": 22500,
+        "attempts": 1,
+        "accepted": 81,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 52,
+        "height": 12,
+        "width": 12,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 10,
+      "ok": true,
+      "elapsedMs": 30.2731,
+      "metrics": {
+        "elapsedMs": 30.25920000000002,
+        "evaluations": 141,
+        "nodes": 23695,
+        "attempts": 1,
+        "accepted": 65,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 68,
+        "height": 12,
+        "width": 12,
+        "boundary": 108
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 11,
+      "ok": true,
+      "elapsedMs": 40.98829999999998,
+      "metrics": {
+        "elapsedMs": 40.977599999999995,
+        "evaluations": 156,
+        "nodes": 33551,
+        "attempts": 1,
+        "accepted": 85,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 48,
+        "height": 12,
+        "width": 10,
+        "boundary": 98
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 12,
+      "ok": true,
+      "elapsedMs": 6.6416000000000395,
+      "metrics": {
+        "elapsedMs": 6.6340000000000146,
+        "evaluations": 145,
+        "nodes": 10640,
+        "attempts": 1,
+        "accepted": 67,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 66,
+        "height": 12,
+        "width": 12,
+        "boundary": 124
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 13,
+      "ok": true,
+      "elapsedMs": 53.96689999999995,
+      "metrics": {
+        "elapsedMs": 53.96010000000001,
+        "evaluations": 151,
+        "nodes": 43028,
+        "attempts": 1,
+        "accepted": 83,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 50,
+        "height": 12,
+        "width": 12,
+        "boundary": 98
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 14,
+      "ok": true,
+      "elapsedMs": 4.426199999999994,
+      "metrics": {
+        "elapsedMs": 4.4208999999999605,
+        "evaluations": 150,
+        "nodes": 7443,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 11,
+        "width": 12,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 15,
+      "ok": true,
+      "elapsedMs": 155.02770000000004,
+      "metrics": {
+        "elapsedMs": 155.0236,
+        "evaluations": 150,
+        "nodes": 198058,
+        "attempts": 1,
+        "accepted": 89,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 44,
+        "height": 10,
+        "width": 12,
+        "boundary": 88
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 16,
+      "ok": true,
+      "elapsedMs": 42.95690000000002,
+      "metrics": {
+        "elapsedMs": 42.95190000000002,
+        "evaluations": 145,
+        "nodes": 42959,
+        "attempts": 1,
+        "accepted": 76,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 57,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 17,
+      "ok": true,
+      "elapsedMs": 23.692499999999995,
+      "metrics": {
+        "elapsedMs": 23.6884,
+        "evaluations": 145,
+        "nodes": 16289,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 18,
+      "ok": true,
+      "elapsedMs": 9.961000000000013,
+      "metrics": {
+        "elapsedMs": 9.956199999999967,
+        "evaluations": 147,
+        "nodes": 19777,
+        "attempts": 1,
+        "accepted": 62,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 71,
+        "height": 12,
+        "width": 12,
+        "boundary": 132
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 19,
+      "ok": true,
+      "elapsedMs": 69.6902,
+      "metrics": {
+        "elapsedMs": 69.68690000000004,
+        "evaluations": 151,
+        "nodes": 72033,
+        "attempts": 1,
+        "accepted": 64,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 69,
+        "height": 12,
+        "width": 12,
+        "boundary": 132
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 20,
+      "ok": true,
+      "elapsedMs": 13.641300000000001,
+      "metrics": {
+        "elapsedMs": 13.63779999999997,
+        "evaluations": 153,
+        "nodes": 19528,
+        "attempts": 1,
+        "accepted": 77,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 56,
+        "height": 12,
+        "width": 12,
+        "boundary": 112
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 21,
+      "ok": true,
+      "elapsedMs": 31.196399999999926,
+      "metrics": {
+        "elapsedMs": 31.192499999999995,
+        "evaluations": 158,
+        "nodes": 41545,
+        "attempts": 1,
+        "accepted": 89,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 44,
+        "height": 12,
+        "width": 12,
+        "boundary": 90
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 22,
+      "ok": true,
+      "elapsedMs": 29.815899999999942,
+      "metrics": {
+        "elapsedMs": 29.811900000000037,
+        "evaluations": 151,
+        "nodes": 41806,
+        "attempts": 1,
+        "accepted": 76,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 57,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 23,
+      "ok": true,
+      "elapsedMs": 19.337800000000016,
+      "metrics": {
+        "elapsedMs": 19.33420000000001,
+        "evaluations": 151,
+        "nodes": 42772,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 108
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 24,
+      "ok": true,
+      "elapsedMs": 45.04780000000005,
+      "metrics": {
+        "elapsedMs": 45.04309999999998,
+        "evaluations": 128,
+        "nodes": 53956,
+        "attempts": 1,
+        "accepted": 67,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 66,
+        "height": 12,
+        "width": 12,
+        "boundary": 104
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 25,
+      "ok": true,
+      "elapsedMs": 60.731700000000046,
+      "metrics": {
+        "elapsedMs": 60.727199999999925,
+        "evaluations": 160,
+        "nodes": 90979,
+        "attempts": 1,
+        "accepted": 80,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 53,
+        "height": 12,
+        "width": 11,
+        "boundary": 104
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 26,
+      "ok": true,
+      "elapsedMs": 58.09899999999993,
+      "metrics": {
+        "elapsedMs": 58.09540000000004,
+        "evaluations": 144,
+        "nodes": 78611,
+        "attempts": 1,
+        "accepted": 70,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 63,
+        "height": 12,
+        "width": 12,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 27,
+      "ok": true,
+      "elapsedMs": 94.4212,
+      "metrics": {
+        "elapsedMs": 94.41489999999999,
+        "evaluations": 147,
+        "nodes": 108487,
+        "attempts": 1,
+        "accepted": 76,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 57,
+        "height": 12,
+        "width": 12,
+        "boundary": 112
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 28,
+      "ok": true,
+      "elapsedMs": 60.22270000000003,
+      "metrics": {
+        "elapsedMs": 60.21849999999995,
+        "evaluations": 149,
+        "nodes": 69307,
+        "attempts": 1,
+        "accepted": 83,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 50,
+        "height": 11,
+        "width": 12,
+        "boundary": 98
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 29,
+      "ok": true,
+      "elapsedMs": 27.750500000000102,
+      "metrics": {
+        "elapsedMs": 27.74660000000017,
+        "evaluations": 151,
+        "nodes": 42153,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 102
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 30,
+      "ok": true,
+      "elapsedMs": 51.861700000000155,
+      "metrics": {
+        "elapsedMs": 51.8578,
+        "evaluations": 159,
+        "nodes": 61849,
+        "attempts": 1,
+        "accepted": 89,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 44,
+        "height": 11,
+        "width": 11,
+        "boundary": 88
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 31,
+      "ok": true,
+      "elapsedMs": 93.55870000000004,
+      "metrics": {
+        "elapsedMs": 93.55420000000004,
+        "evaluations": 149,
+        "nodes": 115706,
+        "attempts": 1,
+        "accepted": 81,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 52,
+        "height": 11,
+        "width": 12,
+        "boundary": 94
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 32,
+      "ok": true,
+      "elapsedMs": 13.044200000000046,
+      "metrics": {
+        "elapsedMs": 13.04040000000009,
+        "evaluations": 143,
+        "nodes": 24518,
+        "attempts": 1,
+        "accepted": 71,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 62,
+        "height": 12,
+        "width": 12,
+        "boundary": 120
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 33,
+      "ok": true,
+      "elapsedMs": 15.461999999999989,
+      "metrics": {
+        "elapsedMs": 15.458399999999983,
+        "evaluations": 146,
+        "nodes": 23700,
+        "attempts": 1,
+        "accepted": 73,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 60,
+        "height": 12,
+        "width": 12,
+        "boundary": 112
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 34,
+      "ok": true,
+      "elapsedMs": 15.001599999999826,
+      "metrics": {
+        "elapsedMs": 14.99759999999992,
+        "evaluations": 151,
+        "nodes": 25879,
+        "attempts": 1,
+        "accepted": 80,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 53,
+        "height": 11,
+        "width": 12,
+        "boundary": 108
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 35,
+      "ok": true,
+      "elapsedMs": 172.42949999999996,
+      "metrics": {
+        "elapsedMs": 172.42579999999998,
+        "evaluations": 145,
+        "nodes": 217973,
+        "attempts": 1,
+        "accepted": 80,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 53,
+        "height": 12,
+        "width": 12,
+        "boundary": 102
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 36,
+      "ok": true,
+      "elapsedMs": 91.19280000000003,
+      "metrics": {
+        "elapsedMs": 91.1884,
+        "evaluations": 158,
+        "nodes": 120114,
+        "attempts": 1,
+        "accepted": 86,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 47,
+        "height": 12,
+        "width": 12,
+        "boundary": 92
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 37,
+      "ok": true,
+      "elapsedMs": 11.058700000000044,
+      "metrics": {
+        "elapsedMs": 11.055099999999811,
+        "evaluations": 157,
+        "nodes": 17887,
+        "attempts": 1,
+        "accepted": 86,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 47,
+        "height": 12,
+        "width": 12,
+        "boundary": 94
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 38,
+      "ok": true,
+      "elapsedMs": 47.82120000000009,
+      "metrics": {
+        "elapsedMs": 47.81789999999978,
+        "evaluations": 142,
+        "nodes": 62989,
+        "attempts": 1,
+        "accepted": 68,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 65,
+        "height": 12,
+        "width": 12,
+        "boundary": 120
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 39,
+      "ok": true,
+      "elapsedMs": 19.22770000000014,
+      "metrics": {
+        "elapsedMs": 19.223700000000008,
+        "evaluations": 152,
+        "nodes": 26894,
+        "attempts": 1,
+        "accepted": 87,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 46,
+        "height": 12,
+        "width": 11,
+        "boundary": 84
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 40,
+      "ok": true,
+      "elapsedMs": 5.96589999999992,
+      "metrics": {
+        "elapsedMs": 5.963600000000042,
+        "evaluations": 142,
+        "nodes": 10994,
+        "attempts": 1,
+        "accepted": 68,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 65,
+        "height": 12,
+        "width": 12,
+        "boundary": 126
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 41,
+      "ok": true,
+      "elapsedMs": 23.25669999999991,
+      "metrics": {
+        "elapsedMs": 23.253600000000006,
+        "evaluations": 162,
+        "nodes": 22160,
+        "attempts": 1,
+        "accepted": 89,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 44,
+        "height": 12,
+        "width": 10,
+        "boundary": 90
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 42,
+      "ok": true,
+      "elapsedMs": 5.7029999999999745,
+      "metrics": {
+        "elapsedMs": 5.700799999999845,
+        "evaluations": 142,
+        "nodes": 10787,
+        "attempts": 1,
+        "accepted": 73,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 60,
+        "height": 12,
+        "width": 12,
+        "boundary": 98
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 43,
+      "ok": true,
+      "elapsedMs": 26.989000000000033,
+      "metrics": {
+        "elapsedMs": 26.985999999999876,
+        "evaluations": 140,
+        "nodes": 38186,
+        "attempts": 1,
+        "accepted": 71,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 62,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 44,
+      "ok": true,
+      "elapsedMs": 28.209299999999985,
+      "metrics": {
+        "elapsedMs": 28.20569999999998,
+        "evaluations": 154,
+        "nodes": 36091,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 12,
+        "width": 12,
+        "boundary": 102
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 45,
+      "ok": true,
+      "elapsedMs": 15.699100000000044,
+      "metrics": {
+        "elapsedMs": 15.695400000000063,
+        "evaluations": 158,
+        "nodes": 27457,
+        "attempts": 1,
+        "accepted": 83,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 50,
+        "height": 12,
+        "width": 12,
+        "boundary": 94
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 46,
+      "ok": true,
+      "elapsedMs": 7.7987000000000535,
+      "metrics": {
+        "elapsedMs": 7.796000000000049,
+        "evaluations": 149,
+        "nodes": 15730,
+        "attempts": 1,
+        "accepted": 71,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 62,
+        "height": 12,
+        "width": 12,
+        "boundary": 122
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 47,
+      "ok": true,
+      "elapsedMs": 21.324699999999893,
+      "metrics": {
+        "elapsedMs": 21.32159999999999,
+        "evaluations": 149,
+        "nodes": 22159,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 12,
+        "width": 11,
+        "boundary": 102
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 48,
+      "ok": true,
+      "elapsedMs": 16.598799999999983,
+      "metrics": {
+        "elapsedMs": 16.595299999999952,
+        "evaluations": 145,
+        "nodes": 21626,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 49,
+      "ok": true,
+      "elapsedMs": 14.689300000000003,
+      "metrics": {
+        "elapsedMs": 14.68509999999992,
+        "evaluations": 161,
+        "nodes": 20663,
+        "attempts": 1,
+        "accepted": 85,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 48,
+        "height": 11,
+        "width": 12,
+        "boundary": 96
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 50,
+      "ok": true,
+      "elapsedMs": 30.04340000000002,
+      "metrics": {
+        "elapsedMs": 30.039399999999887,
+        "evaluations": 151,
+        "nodes": 37761,
+        "attempts": 1,
+        "accepted": 79,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 54,
+        "height": 11,
+        "width": 11,
+        "boundary": 102
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 51,
+      "ok": true,
+      "elapsedMs": 14.685100000000148,
+      "metrics": {
+        "elapsedMs": 14.681699999999864,
+        "evaluations": 147,
+        "nodes": 19798,
+        "attempts": 1,
+        "accepted": 79,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 54,
+        "height": 12,
+        "width": 12,
+        "boundary": 108
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 52,
+      "ok": true,
+      "elapsedMs": 17.50070000000005,
+      "metrics": {
+        "elapsedMs": 17.49689999999987,
+        "evaluations": 160,
+        "nodes": 22104,
+        "attempts": 1,
+        "accepted": 74,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 59,
+        "height": 12,
+        "width": 12,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 53,
+      "ok": true,
+      "elapsedMs": 13.257500000000164,
+      "metrics": {
+        "elapsedMs": 13.252300000000105,
+        "evaluations": 143,
+        "nodes": 17487,
+        "attempts": 1,
+        "accepted": 69,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 64,
+        "height": 12,
+        "width": 12,
+        "boundary": 128
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 54,
+      "ok": true,
+      "elapsedMs": 46.389900000000125,
+      "metrics": {
+        "elapsedMs": 46.38670000000002,
+        "evaluations": 151,
+        "nodes": 56392,
+        "attempts": 1,
+        "accepted": 71,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 62,
+        "height": 12,
+        "width": 12,
+        "boundary": 126
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 55,
+      "ok": true,
+      "elapsedMs": 36.87559999999985,
+      "metrics": {
+        "elapsedMs": 36.871900000000096,
+        "evaluations": 152,
+        "nodes": 44611,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 12,
+        "width": 11,
+        "boundary": 100
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 56,
+      "ok": true,
+      "elapsedMs": 27.903099999999995,
+      "metrics": {
+        "elapsedMs": 27.898499999999785,
+        "evaluations": 156,
+        "nodes": 25146,
+        "attempts": 1,
+        "accepted": 77,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 56,
+        "height": 12,
+        "width": 11,
+        "boundary": 108
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 57,
+      "ok": true,
+      "elapsedMs": 78.35979999999972,
+      "metrics": {
+        "elapsedMs": 78.35500000000002,
+        "evaluations": 152,
+        "nodes": 80880,
+        "attempts": 1,
+        "accepted": 76,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 57,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 58,
+      "ok": true,
+      "elapsedMs": 63.682700000000295,
+      "metrics": {
+        "elapsedMs": 63.67819999999983,
+        "evaluations": 154,
+        "nodes": 104826,
+        "attempts": 1,
+        "accepted": 72,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 61,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 59,
+      "ok": true,
+      "elapsedMs": 55.134000000000015,
+      "metrics": {
+        "elapsedMs": 55.12900000000036,
+        "evaluations": 151,
+        "nodes": 62778,
+        "attempts": 1,
+        "accepted": 77,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 56,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 60,
+      "ok": true,
+      "elapsedMs": 28.897699999999986,
+      "metrics": {
+        "elapsedMs": 28.890699999999924,
+        "evaluations": 157,
+        "nodes": 30958,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 11,
+        "boundary": 104
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 61,
+      "ok": true,
+      "elapsedMs": 21.094100000000253,
+      "metrics": {
+        "elapsedMs": 21.089800000000196,
+        "evaluations": 155,
+        "nodes": 27910,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 12,
+        "width": 11,
+        "boundary": 104
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 62,
+      "ok": true,
+      "elapsedMs": 41.022899999999936,
+      "metrics": {
+        "elapsedMs": 41.01899999999978,
+        "evaluations": 155,
+        "nodes": 41762,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 63,
+      "ok": true,
+      "elapsedMs": 5.647300000000087,
+      "metrics": {
+        "elapsedMs": 5.64469999999983,
+        "evaluations": 152,
+        "nodes": 10569,
+        "attempts": 1,
+        "accepted": 89,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 44,
+        "height": 11,
+        "width": 12,
+        "boundary": 86
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 64,
+      "ok": true,
+      "elapsedMs": 5.936999999999898,
+      "metrics": {
+        "elapsedMs": 5.935599999999795,
+        "evaluations": 156,
+        "nodes": 11484,
+        "attempts": 1,
+        "accepted": 79,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 54,
+        "height": 11,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 65,
+      "ok": true,
+      "elapsedMs": 20.429099999999835,
+      "metrics": {
+        "elapsedMs": 20.426200000000335,
+        "evaluations": 151,
+        "nodes": 20026,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 12,
+        "width": 12,
+        "boundary": 118
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 66,
+      "ok": true,
+      "elapsedMs": 14.831700000000183,
+      "metrics": {
+        "elapsedMs": 14.827900000000227,
+        "evaluations": 147,
+        "nodes": 21355,
+        "attempts": 1,
+        "accepted": 72,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 61,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 67,
+      "ok": true,
+      "elapsedMs": 78.04129999999986,
+      "metrics": {
+        "elapsedMs": 78.03690000000006,
+        "evaluations": 153,
+        "nodes": 86999,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 12,
+        "width": 12,
+        "boundary": 112
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 68,
+      "ok": true,
+      "elapsedMs": 13.945900000000165,
+      "metrics": {
+        "elapsedMs": 13.94250000000011,
+        "evaluations": 153,
+        "nodes": 26851,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 12,
+        "width": 11,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 69,
+      "ok": true,
+      "elapsedMs": 5.123399999999947,
+      "metrics": {
+        "elapsedMs": 5.121299999999792,
+        "evaluations": 146,
+        "nodes": 9905,
+        "attempts": 1,
+        "accepted": 77,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 56,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 70,
+      "ok": true,
+      "elapsedMs": 70.77179999999998,
+      "metrics": {
+        "elapsedMs": 70.76880000000028,
+        "evaluations": 148,
+        "nodes": 62227,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 12,
+        "width": 12,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 71,
+      "ok": true,
+      "elapsedMs": 28.277000000000044,
+      "metrics": {
+        "elapsedMs": 28.273099999999886,
+        "evaluations": 153,
+        "nodes": 34691,
+        "attempts": 1,
+        "accepted": 73,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 60,
+        "height": 12,
+        "width": 12,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 72,
+      "ok": true,
+      "elapsedMs": 39.53919999999971,
+      "metrics": {
+        "elapsedMs": 39.53580000000011,
+        "evaluations": 153,
+        "nodes": 58336,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 11,
+        "width": 12,
+        "boundary": 102
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 73,
+      "ok": true,
+      "elapsedMs": 39.92789999999968,
+      "metrics": {
+        "elapsedMs": 39.92419999999993,
+        "evaluations": 155,
+        "nodes": 36775,
+        "attempts": 1,
+        "accepted": 79,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 54,
+        "height": 12,
+        "width": 12,
+        "boundary": 108
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 74,
+      "ok": true,
+      "elapsedMs": 60.830499999999574,
+      "metrics": {
+        "elapsedMs": 60.826300000000174,
+        "evaluations": 164,
+        "nodes": 78674,
+        "attempts": 1,
+        "accepted": 87,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 46,
+        "height": 12,
+        "width": 11,
+        "boundary": 94
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 75,
+      "ok": true,
+      "elapsedMs": 47.29280000000017,
+      "metrics": {
+        "elapsedMs": 47.28809999999976,
+        "evaluations": 149,
+        "nodes": 60750,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 76,
+      "ok": true,
+      "elapsedMs": 14.222199999999702,
+      "metrics": {
+        "elapsedMs": 14.21770000000015,
+        "evaluations": 148,
+        "nodes": 20168,
+        "attempts": 1,
+        "accepted": 68,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 65,
+        "height": 12,
+        "width": 12,
+        "boundary": 132
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 77,
+      "ok": true,
+      "elapsedMs": 27.535499999999956,
+      "metrics": {
+        "elapsedMs": 27.530299999999897,
+        "evaluations": 155,
+        "nodes": 27818,
+        "attempts": 1,
+        "accepted": 83,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 50,
+        "height": 12,
+        "width": 12,
+        "boundary": 102
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 78,
+      "ok": true,
+      "elapsedMs": 32.320700000000215,
+      "metrics": {
+        "elapsedMs": 32.31659999999965,
+        "evaluations": 151,
+        "nodes": 41578,
+        "attempts": 1,
+        "accepted": 85,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 48,
+        "height": 12,
+        "width": 11,
+        "boundary": 88
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 79,
+      "ok": true,
+      "elapsedMs": 16.979599999999664,
+      "metrics": {
+        "elapsedMs": 16.975800000000163,
+        "evaluations": 143,
+        "nodes": 26264,
+        "attempts": 1,
+        "accepted": 81,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 52,
+        "height": 11,
+        "width": 12,
+        "boundary": 100
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 80,
+      "ok": true,
+      "elapsedMs": 7.764799999999923,
+      "metrics": {
+        "elapsedMs": 7.761300000000119,
+        "evaluations": 153,
+        "nodes": 17405,
+        "attempts": 1,
+        "accepted": 84,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 49,
+        "height": 12,
+        "width": 12,
+        "boundary": 98
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 81,
+      "ok": true,
+      "elapsedMs": 7.052599999999984,
+      "metrics": {
+        "elapsedMs": 7.04910000000018,
+        "evaluations": 156,
+        "nodes": 12957,
+        "attempts": 1,
+        "accepted": 88,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 45,
+        "height": 11,
+        "width": 12,
+        "boundary": 92
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 82,
+      "ok": true,
+      "elapsedMs": 7.390300000000025,
+      "metrics": {
+        "elapsedMs": 7.387900000000172,
+        "evaluations": 151,
+        "nodes": 15390,
+        "attempts": 1,
+        "accepted": 79,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 54,
+        "height": 12,
+        "width": 12,
+        "boundary": 100
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 83,
+      "ok": true,
+      "elapsedMs": 86.45310000000018,
+      "metrics": {
+        "elapsedMs": 86.44970000000012,
+        "evaluations": 156,
+        "nodes": 96053,
+        "attempts": 1,
+        "accepted": 86,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 47,
+        "height": 10,
+        "width": 12,
+        "boundary": 88
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 84,
+      "ok": true,
+      "elapsedMs": 27.814200000000255,
+      "metrics": {
+        "elapsedMs": 27.809099999999944,
+        "evaluations": 156,
+        "nodes": 25173,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 11,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 85,
+      "ok": true,
+      "elapsedMs": 17.609800000000178,
+      "metrics": {
+        "elapsedMs": 17.59940000000006,
+        "evaluations": 143,
+        "nodes": 26817,
+        "attempts": 1,
+        "accepted": 79,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 54,
+        "height": 12,
+        "width": 11,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 86,
+      "ok": true,
+      "elapsedMs": 122.44509999999991,
+      "metrics": {
+        "elapsedMs": 122.43870000000015,
+        "evaluations": 151,
+        "nodes": 143547,
+        "attempts": 1,
+        "accepted": 67,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 66,
+        "height": 12,
+        "width": 12,
+        "boundary": 120
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 87,
+      "ok": true,
+      "elapsedMs": 21.26850000000013,
+      "metrics": {
+        "elapsedMs": 21.263200000000325,
+        "evaluations": 153,
+        "nodes": 16338,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 12,
+        "width": 11,
+        "boundary": 104
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 88,
+      "ok": true,
+      "elapsedMs": 7.589599999999791,
+      "metrics": {
+        "elapsedMs": 7.5856000000003405,
+        "evaluations": 151,
+        "nodes": 14866,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 89,
+      "ok": true,
+      "elapsedMs": 41.94750000000022,
+      "metrics": {
+        "elapsedMs": 41.94290000000001,
+        "evaluations": 150,
+        "nodes": 41885,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 98
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 90,
+      "ok": true,
+      "elapsedMs": 189.9906000000001,
+      "metrics": {
+        "elapsedMs": 189.98530000000028,
+        "evaluations": 153,
+        "nodes": 266698,
+        "attempts": 1,
+        "accepted": 85,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 48,
+        "height": 12,
+        "width": 12,
+        "boundary": 88
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 91,
+      "ok": true,
+      "elapsedMs": 18.962099999999737,
+      "metrics": {
+        "elapsedMs": 18.95659999999998,
+        "evaluations": 149,
+        "nodes": 16089,
+        "attempts": 1,
+        "accepted": 68,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 65,
+        "height": 12,
+        "width": 12,
+        "boundary": 126
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 92,
+      "ok": true,
+      "elapsedMs": 11.453599999999824,
+      "metrics": {
+        "elapsedMs": 11.449099999999817,
+        "evaluations": 146,
+        "nodes": 22873,
+        "attempts": 1,
+        "accepted": 71,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 62,
+        "height": 12,
+        "width": 12,
+        "boundary": 120
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 93,
+      "ok": true,
+      "elapsedMs": 25.001999999999953,
+      "metrics": {
+        "elapsedMs": 24.997499999999945,
+        "evaluations": 154,
+        "nodes": 33989,
+        "attempts": 1,
+        "accepted": 74,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 59,
+        "height": 12,
+        "width": 11,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 94,
+      "ok": true,
+      "elapsedMs": 121.06800000000021,
+      "metrics": {
+        "elapsedMs": 121.0608000000002,
+        "evaluations": 147,
+        "nodes": 122672,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 12,
+        "width": 12,
+        "boundary": 94
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 95,
+      "ok": true,
+      "elapsedMs": 44.52739999999994,
+      "metrics": {
+        "elapsedMs": 44.521999999999935,
+        "evaluations": 152,
+        "nodes": 64808,
+        "attempts": 1,
+        "accepted": 88,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 45,
+        "height": 11,
+        "width": 12,
+        "boundary": 86
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 96,
+      "ok": true,
+      "elapsedMs": 14.396900000000187,
+      "metrics": {
+        "elapsedMs": 14.393099999999777,
+        "evaluations": 154,
+        "nodes": 20951,
+        "attempts": 1,
+        "accepted": 70,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 63,
+        "height": 12,
+        "width": 12,
+        "boundary": 122
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 97,
+      "ok": true,
+      "elapsedMs": 17.910399999999754,
+      "metrics": {
+        "elapsedMs": 17.90689999999995,
+        "evaluations": 156,
+        "nodes": 26351,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 12,
+        "width": 12,
+        "boundary": 98
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 98,
+      "ok": true,
+      "elapsedMs": 32.20060000000012,
+      "metrics": {
+        "elapsedMs": 32.196100000000115,
+        "evaluations": 143,
+        "nodes": 50974,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 12,
+        "width": 10,
+        "boundary": 94
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 99,
+      "ok": true,
+      "elapsedMs": 151.3393000000001,
+      "metrics": {
+        "elapsedMs": 151.33300000000008,
+        "evaluations": 149,
+        "nodes": 186889,
+        "attempts": 1,
+        "accepted": 80,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 53,
+        "height": 12,
+        "width": 11,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "RandomSnake",
+      "seed": 100,
+      "ok": true,
+      "elapsedMs": 81.83339999999998,
+      "metrics": {
+        "elapsedMs": 81.82720000000018,
+        "evaluations": 151,
+        "nodes": 96180,
+        "attempts": 1,
+        "accepted": 81,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 52,
+        "height": 12,
+        "width": 12,
+        "boundary": 98
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 1,
+      "ok": true,
+      "elapsedMs": 219.66859999999997,
+      "metrics": {
+        "elapsedMs": 219.66179999999986,
+        "evaluations": 159,
+        "nodes": 234247,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 11,
+        "width": 12,
+        "boundary": 104
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 2,
+      "ok": true,
+      "elapsedMs": 19.15400000000045,
+      "metrics": {
+        "elapsedMs": 19.147799999999734,
+        "evaluations": 136,
+        "nodes": 19422,
+        "attempts": 1,
+        "accepted": 66,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 67,
+        "height": 12,
+        "width": 12,
+        "boundary": 118
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 3,
+      "ok": true,
+      "elapsedMs": 33.32899999999972,
+      "metrics": {
+        "elapsedMs": 33.322799999999916,
+        "evaluations": 135,
+        "nodes": 37870,
+        "attempts": 1,
+        "accepted": 66,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 67,
+        "height": 12,
+        "width": 12,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 4,
+      "ok": true,
+      "elapsedMs": 98.60149999999976,
+      "metrics": {
+        "elapsedMs": 98.59270000000015,
+        "evaluations": 161,
+        "nodes": 115598,
+        "attempts": 1,
+        "accepted": 80,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 53,
+        "height": 11,
+        "width": 12,
+        "boundary": 108
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 5,
+      "ok": true,
+      "elapsedMs": 44.84490000000005,
+      "metrics": {
+        "elapsedMs": 44.83649999999943,
+        "evaluations": 149,
+        "nodes": 49868,
+        "attempts": 1,
+        "accepted": 68,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 65,
+        "height": 12,
+        "width": 12,
+        "boundary": 126
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 6,
+      "ok": true,
+      "elapsedMs": 19.009299999999712,
+      "metrics": {
+        "elapsedMs": 19.003500000000713,
+        "evaluations": 157,
+        "nodes": 34624,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 11,
+        "width": 12,
+        "boundary": 102
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 7,
+      "ok": true,
+      "elapsedMs": 90.86380000000008,
+      "metrics": {
+        "elapsedMs": 90.85539999999946,
+        "evaluations": 148,
+        "nodes": 121160,
+        "attempts": 1,
+        "accepted": 68,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 65,
+        "height": 12,
+        "width": 12,
+        "boundary": 122
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 8,
+      "ok": true,
+      "elapsedMs": 26.745699999999488,
+      "metrics": {
+        "elapsedMs": 26.739399999999478,
+        "evaluations": 154,
+        "nodes": 26941,
+        "attempts": 1,
+        "accepted": 64,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 69,
+        "height": 12,
+        "width": 12,
+        "boundary": 136
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 9,
+      "ok": true,
+      "elapsedMs": 108.3747999999996,
+      "metrics": {
+        "elapsedMs": 108.3672000000006,
+        "evaluations": 141,
+        "nodes": 131765,
+        "attempts": 1,
+        "accepted": 76,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 57,
+        "height": 12,
+        "width": 11,
+        "boundary": 92
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 10,
+      "ok": true,
+      "elapsedMs": 135.6961999999994,
+      "metrics": {
+        "elapsedMs": 135.6888999999992,
+        "evaluations": 154,
+        "nodes": 153360,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 108
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 11,
+      "ok": true,
+      "elapsedMs": 80.3140000000003,
+      "metrics": {
+        "elapsedMs": 80.30699999999979,
+        "evaluations": 161,
+        "nodes": 122993,
+        "attempts": 1,
+        "accepted": 81,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 52,
+        "height": 11,
+        "width": 12,
+        "boundary": 100
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 12,
+      "ok": true,
+      "elapsedMs": 61.9976000000006,
+      "metrics": {
+        "elapsedMs": 61.99109999999928,
+        "evaluations": 150,
+        "nodes": 80026,
+        "attempts": 1,
+        "accepted": 74,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 59,
+        "height": 11,
+        "width": 12,
+        "boundary": 98
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 13,
+      "ok": true,
+      "elapsedMs": 134.2529000000004,
+      "metrics": {
+        "elapsedMs": 134.2462999999998,
+        "evaluations": 137,
+        "nodes": 162134,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 88
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 14,
+      "ok": true,
+      "elapsedMs": 48.91070000000036,
+      "metrics": {
+        "elapsedMs": 48.90220000000045,
+        "evaluations": 147,
+        "nodes": 69734,
+        "attempts": 1,
+        "accepted": 70,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 63,
+        "height": 11,
+        "width": 12,
+        "boundary": 104
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 15,
+      "ok": true,
+      "elapsedMs": 137.7524999999996,
+      "metrics": {
+        "elapsedMs": 137.7439999999997,
+        "evaluations": 144,
+        "nodes": 158203,
+        "attempts": 1,
+        "accepted": 71,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 62,
+        "height": 12,
+        "width": 12,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 16,
+      "ok": true,
+      "elapsedMs": 27.120499999999993,
+      "metrics": {
+        "elapsedMs": 27.11369999999988,
+        "evaluations": 148,
+        "nodes": 23153,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 12,
+        "width": 12,
+        "boundary": 112
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 17,
+      "ok": true,
+      "elapsedMs": 28.27219999999943,
+      "metrics": {
+        "elapsedMs": 28.265199999999822,
+        "evaluations": 146,
+        "nodes": 73185,
+        "attempts": 1,
+        "accepted": 71,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 62,
+        "height": 12,
+        "width": 12,
+        "boundary": 118
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 18,
+      "ok": true,
+      "elapsedMs": 65.94800000000032,
+      "metrics": {
+        "elapsedMs": 65.9403000000002,
+        "evaluations": 141,
+        "nodes": 71815,
+        "attempts": 1,
+        "accepted": 62,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 71,
+        "height": 12,
+        "width": 12,
+        "boundary": 132
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 19,
+      "ok": true,
+      "elapsedMs": 184.2462999999998,
+      "metrics": {
+        "elapsedMs": 184.23909999999978,
+        "evaluations": 145,
+        "nodes": 253310,
+        "attempts": 1,
+        "accepted": 73,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 60,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 20,
+      "ok": true,
+      "elapsedMs": 471.90450000000055,
+      "metrics": {
+        "elapsedMs": 471.89510000000064,
+        "evaluations": 149,
+        "nodes": 659970,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 96
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 21,
+      "ok": true,
+      "elapsedMs": 162.32769999999982,
+      "metrics": {
+        "elapsedMs": 162.3182999999999,
+        "evaluations": 156,
+        "nodes": 179200,
+        "attempts": 1,
+        "accepted": 74,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 59,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 22,
+      "ok": true,
+      "elapsedMs": 100.29519999999957,
+      "metrics": {
+        "elapsedMs": 100.28780000000006,
+        "evaluations": 148,
+        "nodes": 151540,
+        "attempts": 1,
+        "accepted": 74,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 59,
+        "height": 12,
+        "width": 12,
+        "boundary": 98
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 23,
+      "ok": true,
+      "elapsedMs": 41.53639999999996,
+      "metrics": {
+        "elapsedMs": 41.52930000000015,
+        "evaluations": 148,
+        "nodes": 37203,
+        "attempts": 1,
+        "accepted": 72,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 61,
+        "height": 12,
+        "width": 12,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 24,
+      "ok": true,
+      "elapsedMs": 32.33300000000054,
+      "metrics": {
+        "elapsedMs": 32.328599999999824,
+        "evaluations": 140,
+        "nodes": 50733,
+        "attempts": 1,
+        "accepted": 63,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 70,
+        "height": 11,
+        "width": 12,
+        "boundary": 118
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 25,
+      "ok": true,
+      "elapsedMs": 64.59780000000046,
+      "metrics": {
+        "elapsedMs": 64.59130000000005,
+        "evaluations": 151,
+        "nodes": 119151,
+        "attempts": 1,
+        "accepted": 67,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 66,
+        "height": 12,
+        "width": 12,
+        "boundary": 120
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 26,
+      "ok": true,
+      "elapsedMs": 100.66529999999966,
+      "metrics": {
+        "elapsedMs": 100.65869999999995,
+        "evaluations": 143,
+        "nodes": 115535,
+        "attempts": 1,
+        "accepted": 73,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 60,
+        "height": 12,
+        "width": 12,
+        "boundary": 112
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 27,
+      "ok": true,
+      "elapsedMs": 122.05049999999937,
+      "metrics": {
+        "elapsedMs": 122.04289999999946,
+        "evaluations": 140,
+        "nodes": 153353,
+        "attempts": 1,
+        "accepted": 68,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 65,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 28,
+      "ok": true,
+      "elapsedMs": 75.58579999999984,
+      "metrics": {
+        "elapsedMs": 75.57760000000053,
+        "evaluations": 155,
+        "nodes": 107515,
+        "attempts": 1,
+        "accepted": 80,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 53,
+        "height": 11,
+        "width": 12,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 29,
+      "ok": true,
+      "elapsedMs": 92.59190000000035,
+      "metrics": {
+        "elapsedMs": 92.58429999999953,
+        "evaluations": 140,
+        "nodes": 125467,
+        "attempts": 1,
+        "accepted": 64,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 69,
+        "height": 12,
+        "width": 12,
+        "boundary": 124
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 30,
+      "ok": true,
+      "elapsedMs": 45.33600000000024,
+      "metrics": {
+        "elapsedMs": 45.329899999999725,
+        "evaluations": 153,
+        "nodes": 53651,
+        "attempts": 1,
+        "accepted": 73,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 60,
+        "height": 12,
+        "width": 12,
+        "boundary": 118
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 31,
+      "ok": true,
+      "elapsedMs": 313.0574000000006,
+      "metrics": {
+        "elapsedMs": 313.04869999999937,
+        "evaluations": 149,
+        "nodes": 462326,
+        "attempts": 1,
+        "accepted": 76,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 57,
+        "height": 12,
+        "width": 12,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 32,
+      "ok": true,
+      "elapsedMs": 71.7534999999998,
+      "metrics": {
+        "elapsedMs": 71.7465000000002,
+        "evaluations": 155,
+        "nodes": 73779,
+        "attempts": 1,
+        "accepted": 72,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 61,
+        "height": 12,
+        "width": 12,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 33,
+      "ok": true,
+      "elapsedMs": 500.10939999999937,
+      "metrics": {
+        "elapsedMs": 500.10150000000067,
+        "evaluations": 149,
+        "nodes": 602572,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "deadline"
+      },
+      "shape": {
+        "area": 51,
+        "height": 12,
+        "width": 11,
+        "boundary": 102
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 34,
+      "ok": true,
+      "elapsedMs": 18.579099999999926,
+      "metrics": {
+        "elapsedMs": 18.57089999999971,
+        "evaluations": 141,
+        "nodes": 19746,
+        "attempts": 1,
+        "accepted": 80,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 53,
+        "height": 12,
+        "width": 12,
+        "boundary": 86
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 35,
+      "ok": true,
+      "elapsedMs": 44.67399999999998,
+      "metrics": {
+        "elapsedMs": 44.66829999999936,
+        "evaluations": 151,
+        "nodes": 63357,
+        "attempts": 1,
+        "accepted": 72,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 61,
+        "height": 12,
+        "width": 12,
+        "boundary": 112
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 36,
+      "ok": true,
+      "elapsedMs": 66.86849999999959,
+      "metrics": {
+        "elapsedMs": 66.86189999999988,
+        "evaluations": 143,
+        "nodes": 89340,
+        "attempts": 1,
+        "accepted": 71,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 62,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 37,
+      "ok": true,
+      "elapsedMs": 121.27739999999903,
+      "metrics": {
+        "elapsedMs": 121.27070000000003,
+        "evaluations": 152,
+        "nodes": 173485,
+        "attempts": 1,
+        "accepted": 69,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 64,
+        "height": 11,
+        "width": 12,
+        "boundary": 122
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 38,
+      "ok": true,
+      "elapsedMs": 61.821100000001024,
+      "metrics": {
+        "elapsedMs": 61.814399999999296,
+        "evaluations": 146,
+        "nodes": 69711,
+        "attempts": 1,
+        "accepted": 69,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 64,
+        "height": 12,
+        "width": 12,
+        "boundary": 124
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 39,
+      "ok": true,
+      "elapsedMs": 16.898600000000442,
+      "metrics": {
+        "elapsedMs": 16.89429999999993,
+        "evaluations": 145,
+        "nodes": 28972,
+        "attempts": 1,
+        "accepted": 72,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 61,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 40,
+      "ok": true,
+      "elapsedMs": 220.20060000000012,
+      "metrics": {
+        "elapsedMs": 220.19360000000052,
+        "evaluations": 156,
+        "nodes": 338240,
+        "attempts": 1,
+        "accepted": 86,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 47,
+        "height": 12,
+        "width": 11,
+        "boundary": 92
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 41,
+      "ok": true,
+      "elapsedMs": 88.07390000000123,
+      "metrics": {
+        "elapsedMs": 88.06680000000051,
+        "evaluations": 160,
+        "nodes": 110384,
+        "attempts": 1,
+        "accepted": 83,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 50,
+        "height": 11,
+        "width": 12,
+        "boundary": 100
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 42,
+      "ok": true,
+      "elapsedMs": 157.90009999999893,
+      "metrics": {
+        "elapsedMs": 157.89260000000104,
+        "evaluations": 155,
+        "nodes": 184388,
+        "attempts": 1,
+        "accepted": 81,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 52,
+        "height": 12,
+        "width": 12,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 43,
+      "ok": true,
+      "elapsedMs": 242.32260000000133,
+      "metrics": {
+        "elapsedMs": 242.31360000000132,
+        "evaluations": 159,
+        "nodes": 288492,
+        "attempts": 1,
+        "accepted": 80,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 53,
+        "height": 11,
+        "width": 12,
+        "boundary": 104
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 44,
+      "ok": true,
+      "elapsedMs": 15.13510000000133,
+      "metrics": {
+        "elapsedMs": 15.128300000000309,
+        "evaluations": 147,
+        "nodes": 24978,
+        "attempts": 1,
+        "accepted": 73,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 60,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 45,
+      "ok": true,
+      "elapsedMs": 46.95939999999973,
+      "metrics": {
+        "elapsedMs": 46.95390000000043,
+        "evaluations": 160,
+        "nodes": 43955,
+        "attempts": 1,
+        "accepted": 77,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 56,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 46,
+      "ok": true,
+      "elapsedMs": 39.5007999999998,
+      "metrics": {
+        "elapsedMs": 39.495599999998376,
+        "evaluations": 152,
+        "nodes": 37588,
+        "attempts": 1,
+        "accepted": 65,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 68,
+        "height": 12,
+        "width": 12,
+        "boundary": 138
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 47,
+      "ok": true,
+      "elapsedMs": 29.72309999999925,
+      "metrics": {
+        "elapsedMs": 29.717200000000958,
+        "evaluations": 143,
+        "nodes": 35607,
+        "attempts": 1,
+        "accepted": 68,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 65,
+        "height": 12,
+        "width": 12,
+        "boundary": 124
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 48,
+      "ok": true,
+      "elapsedMs": 141.6259000000009,
+      "metrics": {
+        "elapsedMs": 141.6201999999994,
+        "evaluations": 150,
+        "nodes": 167665,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 49,
+      "ok": true,
+      "elapsedMs": 155.08559999999852,
+      "metrics": {
+        "elapsedMs": 155.07920000000013,
+        "evaluations": 141,
+        "nodes": 208626,
+        "attempts": 1,
+        "accepted": 69,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 64,
+        "height": 12,
+        "width": 12,
+        "boundary": 104
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 50,
+      "ok": true,
+      "elapsedMs": 108.22229999999945,
+      "metrics": {
+        "elapsedMs": 108.21529999999984,
+        "evaluations": 156,
+        "nodes": 134464,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 12,
+        "width": 11,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 51,
+      "ok": true,
+      "elapsedMs": 134.33410000000003,
+      "metrics": {
+        "elapsedMs": 134.32800000000134,
+        "evaluations": 153,
+        "nodes": 165219,
+        "attempts": 1,
+        "accepted": 81,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 52,
+        "height": 12,
+        "width": 11,
+        "boundary": 98
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 52,
+      "ok": true,
+      "elapsedMs": 147.08020000000033,
+      "metrics": {
+        "elapsedMs": 147.0728999999992,
+        "evaluations": 148,
+        "nodes": 202312,
+        "attempts": 1,
+        "accepted": 77,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 56,
+        "height": 12,
+        "width": 12,
+        "boundary": 104
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 53,
+      "ok": true,
+      "elapsedMs": 167.72409999999945,
+      "metrics": {
+        "elapsedMs": 167.71509999999944,
+        "evaluations": 153,
+        "nodes": 256199,
+        "attempts": 1,
+        "accepted": 72,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 61,
+        "height": 12,
+        "width": 12,
+        "boundary": 112
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 54,
+      "ok": true,
+      "elapsedMs": 152.9904000000006,
+      "metrics": {
+        "elapsedMs": 152.98209999999926,
+        "evaluations": 141,
+        "nodes": 184518,
+        "attempts": 1,
+        "accepted": 63,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 70,
+        "height": 12,
+        "width": 12,
+        "boundary": 122
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 55,
+      "ok": true,
+      "elapsedMs": 44.53870000000097,
+      "metrics": {
+        "elapsedMs": 44.53139999999985,
+        "evaluations": 148,
+        "nodes": 50631,
+        "attempts": 1,
+        "accepted": 67,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 66,
+        "height": 12,
+        "width": 12,
+        "boundary": 128
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 56,
+      "ok": true,
+      "elapsedMs": 150.238800000001,
+      "metrics": {
+        "elapsedMs": 150.23030000000108,
+        "evaluations": 151,
+        "nodes": 192325,
+        "attempts": 1,
+        "accepted": 71,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 62,
+        "height": 12,
+        "width": 12,
+        "boundary": 122
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 57,
+      "ok": true,
+      "elapsedMs": 105.68009999999958,
+      "metrics": {
+        "elapsedMs": 105.67160000000149,
+        "evaluations": 152,
+        "nodes": 115326,
+        "attempts": 1,
+        "accepted": 77,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 56,
+        "height": 12,
+        "width": 12,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 58,
+      "ok": true,
+      "elapsedMs": 500.0426000000007,
+      "metrics": {
+        "elapsedMs": 500.03290000000015,
+        "evaluations": 118,
+        "nodes": 689444,
+        "attempts": 1,
+        "accepted": 66,
+        "stopReason": "deadline"
+      },
+      "shape": {
+        "area": 67,
+        "height": 12,
+        "width": 11,
+        "boundary": 98
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 59,
+      "ok": true,
+      "elapsedMs": 129.13949999999932,
+      "metrics": {
+        "elapsedMs": 129.128999999999,
+        "evaluations": 150,
+        "nodes": 167923,
+        "attempts": 1,
+        "accepted": 74,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 59,
+        "height": 12,
+        "width": 12,
+        "boundary": 112
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 60,
+      "ok": true,
+      "elapsedMs": 41.749299999999494,
+      "metrics": {
+        "elapsedMs": 41.741900000000896,
+        "evaluations": 150,
+        "nodes": 40091,
+        "attempts": 1,
+        "accepted": 74,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 59,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 61,
+      "ok": true,
+      "elapsedMs": 76.63799999999901,
+      "metrics": {
+        "elapsedMs": 76.63240000000042,
+        "evaluations": 152,
+        "nodes": 90750,
+        "attempts": 1,
+        "accepted": 72,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 61,
+        "height": 12,
+        "width": 12,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 62,
+      "ok": true,
+      "elapsedMs": 14.796000000000276,
+      "metrics": {
+        "elapsedMs": 14.79110000000037,
+        "evaluations": 159,
+        "nodes": 16409,
+        "attempts": 1,
+        "accepted": 69,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 64,
+        "height": 12,
+        "width": 12,
+        "boundary": 130
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 63,
+      "ok": true,
+      "elapsedMs": 162.2458000000006,
+      "metrics": {
+        "elapsedMs": 162.23829999999907,
+        "evaluations": 146,
+        "nodes": 226040,
+        "attempts": 1,
+        "accepted": 83,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 50,
+        "height": 12,
+        "width": 12,
+        "boundary": 96
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 64,
+      "ok": true,
+      "elapsedMs": 198.79340000000047,
+      "metrics": {
+        "elapsedMs": 198.78470000000016,
+        "evaluations": 150,
+        "nodes": 239472,
+        "attempts": 1,
+        "accepted": 73,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 60,
+        "height": 11,
+        "width": 12,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 65,
+      "ok": true,
+      "elapsedMs": 51.80320000000029,
+      "metrics": {
+        "elapsedMs": 51.79529999999977,
+        "evaluations": 156,
+        "nodes": 59409,
+        "attempts": 1,
+        "accepted": 74,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 59,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 66,
+      "ok": true,
+      "elapsedMs": 83.20440000000053,
+      "metrics": {
+        "elapsedMs": 83.1974999999984,
+        "evaluations": 154,
+        "nodes": 118841,
+        "attempts": 1,
+        "accepted": 70,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 63,
+        "height": 12,
+        "width": 12,
+        "boundary": 122
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 67,
+      "ok": true,
+      "elapsedMs": 135.27620000000024,
+      "metrics": {
+        "elapsedMs": 135.26809999999932,
+        "evaluations": 158,
+        "nodes": 153969,
+        "attempts": 1,
+        "accepted": 76,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 57,
+        "height": 12,
+        "width": 12,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 68,
+      "ok": true,
+      "elapsedMs": 89.83180000000175,
+      "metrics": {
+        "elapsedMs": 89.82380000000012,
+        "evaluations": 147,
+        "nodes": 130120,
+        "attempts": 1,
+        "accepted": 66,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 67,
+        "height": 12,
+        "width": 12,
+        "boundary": 120
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 69,
+      "ok": true,
+      "elapsedMs": 75.01130000000012,
+      "metrics": {
+        "elapsedMs": 75.00350000000071,
+        "evaluations": 159,
+        "nodes": 90995,
+        "attempts": 1,
+        "accepted": 86,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 47,
+        "height": 12,
+        "width": 11,
+        "boundary": 94
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 70,
+      "ok": true,
+      "elapsedMs": 175.63540000000103,
+      "metrics": {
+        "elapsedMs": 175.6267000000007,
+        "evaluations": 147,
+        "nodes": 212613,
+        "attempts": 1,
+        "accepted": 74,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 59,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 71,
+      "ok": true,
+      "elapsedMs": 39.0656999999992,
+      "metrics": {
+        "elapsedMs": 39.0591000000004,
+        "evaluations": 157,
+        "nodes": 35793,
+        "attempts": 1,
+        "accepted": 76,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 57,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 72,
+      "ok": true,
+      "elapsedMs": 500.0491000000002,
+      "metrics": {
+        "elapsedMs": 500.0400000000009,
+        "evaluations": 151,
+        "nodes": 610657,
+        "attempts": 1,
+        "accepted": 83,
+        "stopReason": "deadline"
+      },
+      "shape": {
+        "area": 50,
+        "height": 12,
+        "width": 11,
+        "boundary": 84
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 73,
+      "ok": true,
+      "elapsedMs": 54.609700000000885,
+      "metrics": {
+        "elapsedMs": 54.60289999999986,
+        "evaluations": 155,
+        "nodes": 66411,
+        "attempts": 1,
+        "accepted": 74,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 59,
+        "height": 12,
+        "width": 11,
+        "boundary": 112
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 74,
+      "ok": true,
+      "elapsedMs": 74.98500000000058,
+      "metrics": {
+        "elapsedMs": 74.97730000000047,
+        "evaluations": 152,
+        "nodes": 77823,
+        "attempts": 1,
+        "accepted": 81,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 52,
+        "height": 12,
+        "width": 12,
+        "boundary": 92
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 75,
+      "ok": true,
+      "elapsedMs": 174.82890000000043,
+      "metrics": {
+        "elapsedMs": 174.82150000000001,
+        "evaluations": 155,
+        "nodes": 207899,
+        "attempts": 1,
+        "accepted": 73,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 60,
+        "height": 11,
+        "width": 12,
+        "boundary": 108
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 76,
+      "ok": true,
+      "elapsedMs": 87.98470000000088,
+      "metrics": {
+        "elapsedMs": 87.97680000000037,
+        "evaluations": 150,
+        "nodes": 98112,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 77,
+      "ok": true,
+      "elapsedMs": 20.57220000000052,
+      "metrics": {
+        "elapsedMs": 20.565999999998894,
+        "evaluations": 159,
+        "nodes": 28860,
+        "attempts": 1,
+        "accepted": 74,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 59,
+        "height": 12,
+        "width": 12,
+        "boundary": 120
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 78,
+      "ok": true,
+      "elapsedMs": 366.27059999999983,
+      "metrics": {
+        "elapsedMs": 366.2631000000001,
+        "evaluations": 155,
+        "nodes": 475233,
+        "attempts": 1,
+        "accepted": 86,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 47,
+        "height": 12,
+        "width": 10,
+        "boundary": 92
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 79,
+      "ok": true,
+      "elapsedMs": 19.19890000000123,
+      "metrics": {
+        "elapsedMs": 19.19220000000132,
+        "evaluations": 156,
+        "nodes": 34657,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 12,
+        "width": 12,
+        "boundary": 102
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 80,
+      "ok": true,
+      "elapsedMs": 89.50340000000142,
+      "metrics": {
+        "elapsedMs": 89.49669999999969,
+        "evaluations": 152,
+        "nodes": 95784,
+        "attempts": 1,
+        "accepted": 71,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 62,
+        "height": 12,
+        "width": 11,
+        "boundary": 104
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 81,
+      "ok": true,
+      "elapsedMs": 159.96390000000065,
+      "metrics": {
+        "elapsedMs": 159.95359999999891,
+        "evaluations": 151,
+        "nodes": 218993,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 12,
+        "width": 12,
+        "boundary": 110
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 82,
+      "ok": true,
+      "elapsedMs": 57.75279999999839,
+      "metrics": {
+        "elapsedMs": 57.7434000000012,
+        "evaluations": 148,
+        "nodes": 60294,
+        "attempts": 1,
+        "accepted": 70,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 63,
+        "height": 12,
+        "width": 12,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 83,
+      "ok": true,
+      "elapsedMs": 26.751399999999194,
+      "metrics": {
+        "elapsedMs": 26.743899999999485,
+        "evaluations": 174,
+        "nodes": 31521,
+        "attempts": 1,
+        "accepted": 89,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 44,
+        "height": 11,
+        "width": 11,
+        "boundary": 86
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 84,
+      "ok": true,
+      "elapsedMs": 6.282100000000355,
+      "metrics": {
+        "elapsedMs": 6.277599999999438,
+        "evaluations": 145,
+        "nodes": 13560,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 11,
+        "width": 12,
+        "boundary": 100
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 85,
+      "ok": true,
+      "elapsedMs": 12.732599999999366,
+      "metrics": {
+        "elapsedMs": 12.727600000000166,
+        "evaluations": 149,
+        "nodes": 26084,
+        "attempts": 1,
+        "accepted": 81,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 52,
+        "height": 12,
+        "width": 12,
+        "boundary": 102
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 86,
+      "ok": true,
+      "elapsedMs": 110.73459999999977,
+      "metrics": {
+        "elapsedMs": 110.72839999999997,
+        "evaluations": 146,
+        "nodes": 145133,
+        "attempts": 1,
+        "accepted": 69,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 64,
+        "height": 12,
+        "width": 12,
+        "boundary": 112
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 87,
+      "ok": true,
+      "elapsedMs": 255.9297000000006,
+      "metrics": {
+        "elapsedMs": 255.92079999999987,
+        "evaluations": 155,
+        "nodes": 342493,
+        "attempts": 1,
+        "accepted": 86,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 47,
+        "height": 12,
+        "width": 12,
+        "boundary": 88
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 88,
+      "ok": true,
+      "elapsedMs": 189.16939999999886,
+      "metrics": {
+        "elapsedMs": 189.15970000000016,
+        "evaluations": 153,
+        "nodes": 264062,
+        "attempts": 1,
+        "accepted": 69,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 64,
+        "height": 12,
+        "width": 12,
+        "boundary": 126
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 89,
+      "ok": true,
+      "elapsedMs": 23.94460000000072,
+      "metrics": {
+        "elapsedMs": 23.9375,
+        "evaluations": 163,
+        "nodes": 18925,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 12,
+        "width": 11,
+        "boundary": 92
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 90,
+      "ok": true,
+      "elapsedMs": 14.862800000000789,
+      "metrics": {
+        "elapsedMs": 14.857899999999063,
+        "evaluations": 148,
+        "nodes": 35897,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 11,
+        "width": 12,
+        "boundary": 80
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 91,
+      "ok": true,
+      "elapsedMs": 21.959200000001147,
+      "metrics": {
+        "elapsedMs": 21.955699999998615,
+        "evaluations": 141,
+        "nodes": 27617,
+        "attempts": 1,
+        "accepted": 68,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 65,
+        "height": 12,
+        "width": 12,
+        "boundary": 116
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 92,
+      "ok": true,
+      "elapsedMs": 11.589199999998527,
+      "metrics": {
+        "elapsedMs": 11.585299999998824,
+        "evaluations": 155,
+        "nodes": 26290,
+        "attempts": 1,
+        "accepted": 75,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 58,
+        "height": 12,
+        "width": 12,
+        "boundary": 112
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 93,
+      "ok": true,
+      "elapsedMs": 219.21299999999974,
+      "metrics": {
+        "elapsedMs": 219.20479999999952,
+        "evaluations": 152,
+        "nodes": 267651,
+        "attempts": 1,
+        "accepted": 77,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 56,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 94,
+      "ok": true,
+      "elapsedMs": 60.638599999998405,
+      "metrics": {
+        "elapsedMs": 60.63040000000001,
+        "evaluations": 155,
+        "nodes": 85224,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 95,
+      "ok": true,
+      "elapsedMs": 359.91659999999865,
+      "metrics": {
+        "elapsedMs": 359.90740000000005,
+        "evaluations": 156,
+        "nodes": 450924,
+        "attempts": 1,
+        "accepted": 86,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 47,
+        "height": 12,
+        "width": 12,
+        "boundary": 92
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 96,
+      "ok": true,
+      "elapsedMs": 117.32699999999932,
+      "metrics": {
+        "elapsedMs": 117.3177999999989,
+        "evaluations": 144,
+        "nodes": 146226,
+        "attempts": 1,
+        "accepted": 69,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 64,
+        "height": 12,
+        "width": 12,
+        "boundary": 118
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 97,
+      "ok": true,
+      "elapsedMs": 203.42170000000078,
+      "metrics": {
+        "elapsedMs": 203.41200000000026,
+        "evaluations": 154,
+        "nodes": 268865,
+        "attempts": 1,
+        "accepted": 78,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 55,
+        "height": 12,
+        "width": 12,
+        "boundary": 100
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 98,
+      "ok": true,
+      "elapsedMs": 64.66130000000157,
+      "metrics": {
+        "elapsedMs": 64.65270000000055,
+        "evaluations": 147,
+        "nodes": 85382,
+        "attempts": 1,
+        "accepted": 74,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 59,
+        "height": 12,
+        "width": 12,
+        "boundary": 106
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 99,
+      "ok": true,
+      "elapsedMs": 45.13090000000011,
+      "metrics": {
+        "elapsedMs": 45.123100000000704,
+        "evaluations": 151,
+        "nodes": 56759,
+        "attempts": 1,
+        "accepted": 76,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 57,
+        "height": 12,
+        "width": 12,
+        "boundary": 114
+      }
+    },
+    {
+      "mode": "Balanced",
+      "seed": 100,
+      "ok": true,
+      "elapsedMs": 152.6270000000004,
+      "metrics": {
+        "elapsedMs": 152.6187000000009,
+        "evaluations": 153,
+        "nodes": 170948,
+        "attempts": 1,
+        "accepted": 82,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 51,
+        "height": 11,
+        "width": 11,
+        "boundary": 84
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 1,
+      "ok": true,
+      "elapsedMs": 3331.9469000000026,
+      "metrics": {
+        "elapsedMs": 3331.938100000001,
+        "evaluations": 4749,
+        "nodes": 4338720,
+        "attempts": 26,
+        "accepted": 3267,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 41,
+        "height": 9,
+        "width": 10,
+        "boundary": 40
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 2,
+      "ok": true,
+      "elapsedMs": 929.4164999999994,
+      "metrics": {
+        "elapsedMs": 929.4049999999988,
+        "evaluations": 1749,
+        "nodes": 1199940,
+        "attempts": 10,
+        "accepted": 1270,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 33,
+        "height": 8,
+        "width": 7,
+        "boundary": 32
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 3,
+      "ok": true,
+      "elapsedMs": 783.1563999999998,
+      "metrics": {
+        "elapsedMs": 783.1431000000011,
+        "evaluations": 703,
+        "nodes": 1052468,
+        "attempts": 4,
+        "accepted": 509,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 27,
+        "height": 7,
+        "width": 7,
+        "boundary": 30
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 4,
+      "ok": true,
+      "elapsedMs": 1684.6151000000027,
+      "metrics": {
+        "elapsedMs": 1684.6035999999986,
+        "evaluations": 2447,
+        "nodes": 2359267,
+        "attempts": 14,
+        "accepted": 1760,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 33,
+        "height": 8,
+        "width": 10,
+        "boundary": 48
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 5,
+      "ok": true,
+      "elapsedMs": 444.83569999999963,
+      "metrics": {
+        "elapsedMs": 444.825499999999,
+        "evaluations": 926,
+        "nodes": 568230,
+        "attempts": 5,
+        "accepted": 628,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 26,
+        "height": 12,
+        "width": 12,
+        "boundary": 50
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 6,
+      "ok": true,
+      "elapsedMs": 3142.6324999999997,
+      "metrics": {
+        "elapsedMs": 3142.622299999999,
+        "evaluations": 3715,
+        "nodes": 4125912,
+        "attempts": 21,
+        "accepted": 2650,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 35,
+        "height": 6,
+        "width": 11,
+        "boundary": 38
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 7,
+      "ok": true,
+      "elapsedMs": 2947.540100000002,
+      "metrics": {
+        "elapsedMs": 2947.5296000000017,
+        "evaluations": 2506,
+        "nodes": 3789941,
+        "attempts": 13,
+        "accepted": 1639,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 27,
+        "height": 7,
+        "width": 8,
+        "boundary": 38
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 8,
+      "ok": true,
+      "elapsedMs": 4468.3302,
+      "metrics": {
+        "elapsedMs": 4468.3183999999965,
+        "evaluations": 4469,
+        "nodes": 5966741,
+        "attempts": 25,
+        "accepted": 3129,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 27,
+        "height": 5,
+        "width": 7,
+        "boundary": 30
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 9,
+      "ok": true,
+      "elapsedMs": 1428.2737000000052,
+      "metrics": {
+        "elapsedMs": 1428.2623000000021,
+        "evaluations": 1066,
+        "nodes": 1835905,
+        "attempts": 6,
+        "accepted": 741,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 22,
+        "height": 5,
+        "width": 7,
+        "boundary": 34
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 10,
+      "ok": true,
+      "elapsedMs": 525.7995999999985,
+      "metrics": {
+        "elapsedMs": 525.7868999999992,
+        "evaluations": 860,
+        "nodes": 665538,
+        "attempts": 5,
+        "accepted": 641,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 27,
+        "height": 7,
+        "width": 7,
+        "boundary": 30
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 11,
+      "ok": true,
+      "elapsedMs": 4855.478600000002,
+      "metrics": {
+        "elapsedMs": 4855.466800000002,
+        "evaluations": 6091,
+        "nodes": 6198139,
+        "attempts": 35,
+        "accepted": 4455,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 40,
+        "height": 8,
+        "width": 9,
+        "boundary": 44
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 12,
+      "ok": true,
+      "elapsedMs": 2108.7306000000026,
+      "metrics": {
+        "elapsedMs": 2108.720300000001,
+        "evaluations": 2642,
+        "nodes": 2867530,
+        "attempts": 15,
+        "accepted": 1923,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 34,
+        "height": 9,
+        "width": 8,
+        "boundary": 36
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 13,
+      "ok": true,
+      "elapsedMs": 4864.736199999999,
+      "metrics": {
+        "elapsedMs": 4864.726499999997,
+        "evaluations": 2370,
+        "nodes": 6993108,
+        "attempts": 12,
+        "accepted": 1504,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 41,
+        "height": 8,
+        "width": 8,
+        "boundary": 36
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 14,
+      "ok": true,
+      "elapsedMs": 6202.148699999998,
+      "metrics": {
+        "elapsedMs": 6202.138500000001,
+        "evaluations": 5866,
+        "nodes": 8097777,
+        "attempts": 33,
+        "accepted": 4155,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 25,
+        "height": 9,
+        "width": 4,
+        "boundary": 28
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 15,
+      "ok": true,
+      "elapsedMs": 3166.210300000006,
+      "metrics": {
+        "elapsedMs": 3166.197899999999,
+        "evaluations": 3573,
+        "nodes": 4059451,
+        "attempts": 20,
+        "accepted": 2520,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 42,
+        "height": 6,
+        "width": 10,
+        "boundary": 40
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 16,
+      "ok": true,
+      "elapsedMs": 11356.490800000007,
+      "metrics": {
+        "elapsedMs": 11356.479099999997,
+        "evaluations": 12403,
+        "nodes": 14654293,
+        "attempts": 69,
+        "accepted": 8736,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 36,
+        "height": 6,
+        "width": 7,
+        "boundary": 26
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 17,
+      "ok": true,
+      "elapsedMs": 633.2507000000041,
+      "metrics": {
+        "elapsedMs": 633.2402999999904,
+        "evaluations": 1415,
+        "nodes": 814167,
+        "attempts": 8,
+        "accepted": 1012,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 32,
+        "height": 6,
+        "width": 7,
+        "boundary": 26
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 18,
+      "ok": true,
+      "elapsedMs": 12744.511700000003,
+      "metrics": {
+        "elapsedMs": 12744.5006,
+        "evaluations": 15520,
+        "nodes": 16452456,
+        "attempts": 86,
+        "accepted": 10913,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 38,
+        "height": 12,
+        "width": 7,
+        "boundary": 44
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 19,
+      "ok": true,
+      "elapsedMs": 21811.720499999996,
+      "metrics": {
+        "elapsedMs": 21811.708599999998,
+        "evaluations": 14978,
+        "nodes": 27185293,
+        "attempts": 81,
+        "accepted": 10180,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 34,
+        "height": 6,
+        "width": 11,
+        "boundary": 38
+      }
+    },
+    {
+      "mode": "SeedGrowth",
+      "seed": 20,
+      "ok": true,
+      "elapsedMs": 183.68459999999322,
+      "metrics": {
+        "elapsedMs": 183.67390000000887,
+        "evaluations": 315,
+        "nodes": 228587,
+        "attempts": 2,
+        "accepted": 261,
+        "stopReason": "complete"
+      },
+      "shape": {
+        "area": 36,
+        "height": 9,
+        "width": 8,
+        "boundary": 38
+      }
+    }
+  ],
+  "summary": {
+    "RandomSnake": {
+      "count": 100,
+      "completed": 100,
+      "medianMs": 27.814200000000255,
+      "p95Ms": 121.06800000000021,
+      "maxMs": 189.9906000000001,
+      "meanLargestRegion": {
+        "area": 54.9,
+        "height": 11.81,
+        "width": 11.77,
+        "boundary": 106.16
+      }
+    },
+    "Balanced": {
+      "count": 100,
+      "completed": 100,
+      "medianMs": 87.98470000000088,
+      "p95Ms": 359.91659999999865,
+      "maxMs": 500.10939999999937,
+      "meanLargestRegion": {
+        "area": 58.58,
+        "height": 11.83,
+        "width": 11.85,
+        "boundary": 108.88
+      }
+    },
+    "SeedGrowth": {
+      "count": 20,
+      "completed": 20,
+      "medianMs": 2947.540100000002,
+      "p95Ms": 12744.511700000003,
+      "maxMs": 21811.720499999996,
+      "meanLargestRegion": {
+        "area": 32.8,
+        "height": 7.65,
+        "width": 8.25,
+        "boundary": 36.3
+      }
+    }
+  }
+}

@@ -13,7 +13,7 @@
       button.querySelector('.mark').textContent = value === CAT ? '🐱' : value === CROSS ? '×' : '';
       button.classList.toggle('cross', value === CROSS);
       button.classList.toggle('conflict', result.conflicts.has(i));
-      button.setAttribute('aria-label', `${Math.floor(i / game.puzzle.n) + 1}行 ${i % game.puzzle.n + 1}列 領域${game.puzzle.regions[i] + 1}：${value === CAT ? '猫' : value === CROSS ? 'バツ' : '空白'}${result.conflicts.has(i) ? '、ルール違反' : ''}`);
+      button.setAttribute('aria-label', `${Math.floor(i / game.puzzle.n) + 1}行 ${i % game.puzzle.n + 1}列：${value === CAT ? '猫' : value === CROSS ? 'バツ' : '空白'}${result.conflicts.has(i) ? '、ルール違反' : ''}`);
     });
     document.querySelector('#count').textContent = `猫 ${result.count} / ${game.puzzle.n}`;
     document.querySelector('#status').textContent = result.complete ? 'クリア！' : result.conflicts.size ? '赤枠の猫を確認してね' : '猫の居場所を探そう';
@@ -49,37 +49,76 @@
       button.style.setProperty('--color', colors[region]); button.tabIndex = -1;
       if (i % n < n - 1 && regions[i + 1] !== region) button.classList.add('edge-right');
       if (i + n < n * n && regions[i + n] !== region) button.classList.add('edge-bottom');
-      const label = document.createElement('span'); label.className = 'region'; label.textContent = region + 1; label.setAttribute('aria-hidden', 'true');
       const mark = document.createElement('span'); mark.className = 'mark'; mark.setAttribute('aria-hidden', 'true');
-      button.append(label, mark); board.append(button); buttons.push(button);
+      button.append(mark); board.append(button); buttons.push(button);
     });
     render();
   }
-  function generatePuzzle(n) {
-    // File URLs may prohibit workers; direct-file play still has a local fallback.
-    if (location.protocol === 'file:' || typeof Worker === 'undefined') return Promise.resolve().then(() => CatGenerator.generate(n));
-    return new Promise((resolve, reject) => {
-      let worker;
-      try { worker = new Worker('./js/generator-worker.js'); }
-      catch { resolve(CatGenerator.generate(n)); return; }
-      worker.onmessage = ({ data }) => { worker.terminate(); data.error ? reject(new Error(data.error)) : resolve(data); };
-      worker.onerror = () => { worker.terminate(); try { resolve(CatGenerator.generate(n)); } catch (error) { reject(error); } };
-      worker.postMessage(n);
-    });
+  const modeSelect = document.querySelector('#mode');
+  const descriptions = {
+    RandomSnake: '広い領域を残して形を作ります。調整は最大0.5秒。端末により待ち時間は変わります。',
+    Balanced: '小さな領域を優先して広げます。調整は最大0.5秒。端末により待ち時間は変わります。',
+    SeedGrowth: '各猫から領域を広げます。最大30秒かかり、完成しない場合もあります。'
+  };
+  modeSelect.value = 'RandomSnake';
+  function describeMode() { document.querySelector('#mode-note').textContent = descriptions[modeSelect.value]; }
+  modeSelect.addEventListener('change', describeMode);
+  describeMode();
+  let requestId = 0, active = null;
+  function setBusy(value) {
+    busy = value; board.setAttribute('aria-busy', String(value));
+    document.querySelector('#generation').hidden = !value;
+    document.querySelectorAll('.toolbar button, select, .actions button, .sharing button').forEach(b => b.disabled = value);
+    if (!value) {
+      document.querySelector('#undo').disabled = !game?.history.length;
+      document.querySelector('#reset').disabled = !game;
+      document.querySelector('#share').disabled = !game;
+    }
   }
-  function newPuzzle() {
-    if (busy) return;
-    cancelPending(); gesture = null; busy = true;
-    document.querySelector('#status').textContent = 'パズルを作っています…';
-    board.setAttribute('aria-busy', 'true');
-    document.querySelectorAll('.toolbar button, select, .actions button').forEach(b => b.disabled = true);
+  function cancelGeneration() {
+    if (!active) return;
+    active.controller.abort(); active = null; requestId++;
+    setBusy(false);
+    if (game) { size.value = String(game.puzzle.n); render(); }
+    else document.querySelector('#status').textContent = '新しいパズルを作ってください。';
+    document.querySelector('#share-status').textContent = '生成をキャンセルしました。';
+  }
+  document.querySelector('#cancel').addEventListener('click', cancelGeneration);
+  function newPuzzle(shared = null) {
+    // A new request supersedes any pending work, even if delivered programmatically.
+    active?.controller.abort();
+    if (game) flushPending(); else cancelPending();
+    gesture = null;
+    if (game) render();
+    const id = ++requestId, controller = new AbortController();
+    const n = Number(size.value), mode = modeSelect.value;
+    active = { id, controller }; setBusy(true);
+    document.querySelector('#generation-status').textContent = shared === null ? `${mode} · 0.0秒` : '共有された問題を確認しています…';
     setTimeout(async () => {
-      try { game = new Game(await generatePuzzle(Number(size.value))); mount(); }
-      catch (error) { document.querySelector('#status').textContent = '生成できませんでした。もう一度お試しください。'; console.error(error); }
-      finally {
-        busy = false; board.setAttribute('aria-busy', 'false');
-        document.querySelectorAll('.toolbar button, select, .actions button').forEach(b => b.disabled = false);
-        document.querySelector('#undo').disabled = !game?.history.length;
+      if (id !== requestId) return;
+      try {
+        const result = shared === null ? await CatGeneration.run(n, { mode, signal: controller.signal, requestId: id,
+          onProgress: progress => {
+            if (id === requestId) document.querySelector('#generation-status').textContent = `${mode} · ${(progress.elapsedMs / 1000).toFixed(1)}秒`;
+          } }) : { puzzle: CatShare.decode(shared) };
+        if (id !== requestId || controller.signal.aborted) return;
+        const puzzle = result.puzzle;
+        game = new Game(puzzle); size.value = String(puzzle.n); mount();
+        document.querySelector('#current-mode').textContent = shared === null ? `この問題：${puzzle.mode}` : '共有された問題';
+        document.querySelector('#share-output').hidden = true;
+        document.querySelector('#share-status').textContent = shared === null ? '' : '共有された問題を読み込みました。最初から遊べます。';
+        if (location.protocol !== 'file:') {
+          const url = new URL(location.href);
+          url.hash = shared === null ? '' : new URLSearchParams({ p: CatShare.encode(puzzle) }).toString();
+          try { history.replaceState(null, '', url.href); } catch { /* Sharing still works without history access. */ }
+        }
+      } catch (error) {
+        if (id !== requestId) return;
+        if (game) { size.value = String(game.puzzle.n); render(); }
+        else document.querySelector('#status').textContent = '新しいパズルを作るか、別の共有データを入力してください。';
+        document.querySelector('#share-status').textContent = shared === null ? error.message : `読み込めませんでした：${error.message}`;
+      } finally {
+        if (id === requestId) { active = null; setBusy(false); }
       }
     }, 30);
   }
@@ -128,9 +167,31 @@
     // Support assistive-technology activation without duplicating pointer input.
     if (event.detail === 0 && !busy && event.target.closest('.cell')) tap(Number(event.target.closest('.cell').dataset.index));
   });
-  document.querySelector('#new').addEventListener('click', newPuzzle);
-  size.addEventListener('change', newPuzzle);
+  document.querySelector('#new').addEventListener('click', () => newPuzzle());
+  size.addEventListener('change', () => newPuzzle());
   document.querySelector('#undo').addEventListener('click', () => { flushPending(); game.undo(); render(); });
   document.querySelector('#reset').addEventListener('click', () => { flushPending(); game.reset(); render(); });
-  newPuzzle();
+  document.querySelector('#share').addEventListener('click', () => {
+    if (busy || !game) return;
+    const local = location.protocol === 'file:';
+    document.querySelector('#share-value').value = local ? CatShare.encode(game.puzzle) : CatShare.link(game.puzzle, location.href);
+    document.querySelector('#share-output').hidden = false;
+    document.querySelector('#share-note').textContent = local
+      ? 'このコードを相手の「共有された問題を開く」に貼り付けてください。'
+      : 'このURLを開くと、同じ問題を最初から遊べます。';
+    document.querySelector('#share-status').textContent = '答え・入力済みの猫や×・色の割り当ては含まれません。';
+  });
+  document.querySelector('#copy-share').addEventListener('click', async () => {
+    const field = document.querySelector('#share-value');
+    try {
+      await navigator.clipboard.writeText(field.value);
+      document.querySelector('#share-status').textContent = 'コピーしました。相手に送ってください。';
+    } catch {
+      field.focus(); field.select();
+      document.querySelector('#share-status').textContent = 'コピーできなかったため選択しました。選択した文字列をコピーしてください。';
+    }
+  });
+  document.querySelector('#import').addEventListener('click', () => newPuzzle(document.querySelector('#import-value').value));
+  const initial = new URLSearchParams(location.hash.slice(1)).get('p');
+  newPuzzle(initial);
 })();
