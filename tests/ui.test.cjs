@@ -26,7 +26,7 @@ async function setup(hash = '', runOverride) {
     addEventListener(name, handler) { this.events[name] = handler; }
     getBoundingClientRect() { return { left: 0, top: 0, right: 250, bottom: 250, width: 250, height: 250 }; }
   }
-  const elements = Object.fromEntries(['board', 'size', 'count', 'status', 'undo', 'reset', 'new', 'success', 'share', 'share-output', 'share-value', 'share-note', 'share-status', 'copy-share', 'import', 'import-value', 'mode', 'mode-note', 'generation', 'generation-status', 'cancel', 'current-mode'].map(id => [id, new Element()]));
+  const elements = Object.fromEntries(['puzzle-menu', 'board', 'size', 'count', 'status', 'undo', 'redo', 'reset', 'new', 'success', 'share', 'share-output', 'share-value', 'share-note', 'share-status', 'copy-share', 'import', 'import-value', 'mode', 'mode-note', 'generation', 'generation-status', 'cancel', 'current-mode'].map(id => [id, new Element()]));
   const timers = new Map(); let timerId = 0, game, randomValue = 0.25;
   const context = {
     CatGame: { ...CatGame, Game: class extends CatGame.Game { constructor(p) { super(p); game = this; } } },
@@ -35,11 +35,18 @@ async function setup(hash = '', runOverride) {
     Option: function (_, value) { this.value = value; },
     location: { protocol: 'file:', hash }, console,
     Math: Object.assign(Object.create(Math), { random: () => randomValue }),
-    setTimeout: callback => { timers.set(++timerId, callback); return timerId; },
+    setTimeout: (callback, delay) => { timers.set(++timerId, { callback, delay }); return timerId; },
     clearTimeout: id => timers.delete(id)
   };
   vm.runInNewContext(fs.readFileSync(require.resolve('../js/ui.js'), 'utf8'), context);
-  async function tick() { const callbacks = [...timers.values()]; timers.clear(); for (const fn of callbacks) await fn(); }
+  async function tick(ms = Infinity) {
+    const due = [...timers.entries()].sort((a, b) => a[1].delay - b[1].delay);
+    for (const [id, timer] of due) {
+      if (!timers.has(id)) continue;
+      if (timer.delay <= ms) { timers.delete(id); await timer.callback(); }
+      else timer.delay -= ms;
+    }
+  }
   await tick();
   function pointer(name, index) {
     elements.board.events[name]({ target: elements.board.children[index], pointerId: 1, isPrimary: true, button: 0, clientX: (index % 5) * 50 + 25, clientY: Math.floor(index / 5) * 50 + 25, preventDefault() {} });
@@ -48,6 +55,125 @@ async function setup(hash = '', runOverride) {
   const stroke = (from, to) => { pointer('pointerdown', from); pointer('pointermove', to); pointer('pointerup', to); };
   return { elements, tick, tap, stroke, pointer, get game() { return game; }, setRandom: v => randomValue = v };
 }
+
+test('single taps delay only the new cross display by 180ms', async () => {
+  const ui = await setup();
+  const cell = ui.elements.board.children[0];
+  ui.tap(0);
+  assert.equal(ui.game.cells[0], CatGame.CROSS);
+  assert.equal(cell.querySelector('.mark').textContent, '');
+  assert.match(cell.attributes['aria-label'], /バツ/);
+  assert.equal(ui.elements.undo.disabled, false);
+  await ui.tick(179);
+  assert.equal(cell.querySelector('.mark').textContent, '');
+  await ui.tick(1);
+  assert.equal(cell.querySelector('.mark').textContent, '×');
+  await ui.tick();
+  ui.tap(0);
+  assert.equal(ui.game.cells[0], CatGame.EMPTY);
+  assert.equal(cell.querySelector('.mark').textContent, '');
+  await ui.tick();
+  ui.tap(0); ui.tap(0);
+  ui.tap(0);
+  assert.equal(ui.game.cells[0], CatGame.EMPTY);
+  assert.equal(cell.querySelector('.mark').textContent, '');
+});
+
+test('150ms double tap shows only a cat and its cancelled display timer cannot overwrite it', async () => {
+  const ui = await setup();
+  const mark = ui.elements.board.children[0].querySelector('.mark');
+  ui.tap(0); await ui.tick(150);
+  assert.equal(mark.textContent, '');
+  ui.tap(0);
+  assert.equal(mark.textContent, '🐱');
+  await ui.tick();
+  assert.equal(mark.textContent, '🐱');
+  assert.equal(ui.game.history.length, 1);
+});
+
+test('double tap recognition stays at 300ms independently of cross display', async () => {
+  const ui = await setup();
+  ui.tap(0); await ui.tick(299); ui.tap(0);
+  assert.equal(ui.game.cells[0], CatGame.CAT);
+  ui.tap(1); await ui.tick(400); ui.tap(1);
+  assert.equal(ui.game.cells[1], CatGame.EMPTY);
+  await ui.tick();
+  assert.equal(ui.elements.board.children[1].querySelector('.mark').textContent, '');
+});
+
+test('double taps replace the first tap and undo directly to the original state', async () => {
+  const ui = await setup();
+  ui.tap(0); ui.tap(0);
+  assert.equal(ui.elements.board.children[0].querySelector('.mark').textContent, '🐱');
+  assert.equal(ui.game.history.length, 1);
+  ui.elements.undo.events.click();
+  assert.equal(ui.game.cells[0], CatGame.EMPTY);
+  ui.tap(0); await ui.tick();
+  const historyLength = ui.game.history.length;
+  ui.tap(0); ui.tap(0);
+  assert.equal(ui.game.cells[0], CatGame.CROSS);
+  assert.equal(ui.game.history.length, historyLength);
+  ui.elements.undo.events.click();
+  assert.equal(ui.game.cells[0], CatGame.EMPTY);
+  ui.tap(0); ui.tap(0); ui.tap(0); ui.tap(0);
+  ui.elements.undo.events.click();
+  assert.equal(ui.game.cells[0], CatGame.CAT);
+});
+
+test('redo restores taps, cats, strokes and reset as complete actions', async () => {
+  const ui = await setup();
+  assert.equal(ui.elements.redo.disabled, true);
+  ui.tap(0); ui.tap(0); ui.stroke(1, 4); ui.elements.reset.events.click();
+  const cleared = [...ui.game.cells];
+  ui.elements.undo.events.click();
+  const drawn = [...ui.game.cells];
+  ui.elements.undo.events.click();
+  const catOnly = [...ui.game.cells];
+  ui.elements.undo.events.click();
+  assert.ok(ui.game.cells.every(c => c === CatGame.EMPTY));
+  assert.equal(ui.elements.undo.disabled, true);
+  assert.equal(ui.elements.redo.disabled, false);
+  for (const expected of [catOnly, drawn, cleared]) {
+    ui.elements.redo.events.click();
+    assert.deepEqual(ui.game.cells, expected);
+  }
+  assert.equal(ui.elements.redo.disabled, true);
+  ui.tap(0); ui.elements.undo.events.click(); ui.elements.redo.events.click();
+  await ui.tick();
+  assert.equal(ui.elements.board.children[0].querySelector('.mark').textContent, '×');
+});
+
+test('new moves clear redo; blocked cross double taps preserve redo without a phantom move', async () => {
+  const ui = await setup();
+  ui.tap(0); await ui.tick(); ui.tap(1);
+  ui.elements.undo.events.click();
+  ui.tap(0); ui.tap(0);
+  assert.equal(ui.game.cells[0], CatGame.CROSS);
+  assert.equal(ui.elements.redo.disabled, false);
+  ui.elements.redo.events.click();
+  assert.deepEqual(ui.game.cells.slice(0, 2), [1, 1]);
+  ui.elements.undo.events.click();
+  ui.tap(2); ui.tap(2);
+  assert.equal(ui.elements.redo.disabled, true);
+  ui.elements.undo.events.click(); ui.elements.redo.events.click();
+  assert.deepEqual(ui.game.cells.slice(0, 3), [1, 0, 2]);
+  ui.elements.new.events.click(); await ui.tick();
+  assert.equal(ui.elements.redo.disabled, true);
+});
+
+test('subsequent actions cancel double-tap recognition without delayed changes', async () => {
+  const ui = await setup();
+  ui.tap(0); ui.tap(1); ui.tap(0);
+  assert.deepEqual(ui.game.cells.slice(0, 2), [0, 1]);
+  ui.elements.undo.events.click(); await ui.tick();
+  assert.deepEqual(ui.game.cells.slice(0, 2), [1, 1]);
+  ui.tap(2); ui.elements.reset.events.click(); await ui.tick();
+  assert.ok(ui.game.cells.every(c => c === CatGame.EMPTY));
+  ui.tap(0); ui.stroke(0, 4); await ui.tick();
+  assert.ok(ui.game.cells.every(c => c === CatGame.EMPTY));
+  ui.elements.undo.events.click();
+  assert.deepEqual(ui.game.cells.slice(0, 5), [1, 0, 0, 0, 0]);
+});
 
 test('double tapping a cross is blocked; clearing it first permits a cat', async () => {
   const ui = await setup();

@@ -11,13 +11,14 @@
     return { count: cats.length, conflicts, complete: cats.length === n && conflicts.size === 0 };
   }
   class Game {
-    constructor(puzzle) { this.puzzle = puzzle; this.cells = Array(puzzle.n ** 2).fill(EMPTY); this.history = []; }
+    constructor(puzzle) { this.puzzle = puzzle; this.cells = Array(puzzle.n ** 2).fill(EMPTY); this.history = []; this.future = []; }
     apply(changes) {
       const before = [...this.cells];
       for (const [index, value] of changes) if (Number.isInteger(index) && index >= 0 && index < this.cells.length && [EMPTY, CROSS, CAT].includes(value)) this.cells[index] = value;
-      if (before.some((v, i) => v !== this.cells[i])) this.history.push(before);
+      if (before.some((v, i) => v !== this.cells[i])) { this.history.push(before); this.future = []; }
     }
-    undo() { if (this.history.length) this.cells = this.history.pop(); }
+    undo() { if (this.history.length) { this.future.push([...this.cells]); this.cells = this.history.pop(); } }
+    redo() { if (this.future.length) { this.history.push([...this.cells]); this.cells = this.future.pop(); } }
     reset() { this.apply(this.cells.map((_, i) => [i, EMPTY])); }
     get result() { return evaluate(this.puzzle, this.cells); }
   }

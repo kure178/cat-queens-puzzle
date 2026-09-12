@@ -2,6 +2,7 @@
 (() => {
   'use strict';
   const { Game, EMPTY, CROSS, CAT } = CatGame;
+  const DOUBLE_TAP_MS = 300, CROSS_DISPLAY_MS = 180;
   const board = document.querySelector('#board'), size = document.querySelector('#size');
   const palette = ['#d9d9ee','#f0d4bb','#c7dfd0','#f0e5ac','#e8c7d4','#c3dce7','#dbdfb9','#d2c5df','#bce0dd','#eebfb8','#cbd3e8','#e5d8c3'];
   let game, buttons = [], gesture = null, pending = null, busy = false;
@@ -10,7 +11,8 @@
     const result = game.result;
     buttons.forEach((button, i) => {
       const value = game.cells[i];
-      button.querySelector('.mark').textContent = value === CAT ? '🐱' : value === CROSS ? '×' : '';
+      const hideCross = pending?.index === i && pending.hideCross;
+      button.querySelector('.mark').textContent = value === CAT ? '🐱' : value === CROSS && !hideCross ? '×' : '';
       button.classList.toggle('cross', value === CROSS);
       button.classList.toggle('conflict', result.conflicts.has(i));
       button.setAttribute('aria-label', `${Math.floor(i / game.puzzle.n) + 1}行 ${i % game.puzzle.n + 1}列：${value === CAT ? '猫' : value === CROSS ? 'バツ' : '空白'}${result.conflicts.has(i) ? '、ルール違反' : ''}`);
@@ -19,21 +21,33 @@
     document.querySelector('#status').textContent = result.complete ? 'クリア！' : result.conflicts.size ? '赤枠の猫を確認してね' : '猫の居場所を探そう';
     document.querySelector('#success').hidden = !result.complete;
     document.querySelector('#undo').disabled = !game.history.length;
+    document.querySelector('#redo').disabled = !game.future.length;
   }
-  function cancelPending() { if (pending) clearTimeout(pending.timer); pending = null; }
-  function flushPending() {
-    if (!pending) return;
-    const i = pending.index; cancelPending();
-    game.apply([[i, game.cells[i] === EMPTY ? CROSS : EMPTY]]); render();
+  function cancelPending() {
+    if (pending) { clearTimeout(pending.timer); clearTimeout(pending.displayTimer); }
+    pending = null;
   }
   function tap(i) {
     if (pending && pending.index === i) {
+      const { source, future } = pending;
       cancelPending();
-      if (game.cells[i] !== CROSS) game.apply([[i, game.cells[i] === CAT ? EMPTY : CAT]]);
-      render();
+      // Replace the immediate single tap so a double tap remains one undo step.
+      game.undo();
+      game.future = future;
+      if (source !== CROSS) game.apply([[i, source === CAT ? EMPTY : CAT]]);
     } else {
-      flushPending(); pending = { index: i, timer: setTimeout(flushPending, 300) };
+      cancelPending();
+      const source = game.cells[i];
+      const future = [...game.future];
+      game.apply([[i, source === EMPTY ? CROSS : EMPTY]]);
+      // Keep recognition separate from the short visual delay for a new cross.
+      pending = { index: i, source, future, hideCross: source === EMPTY,
+        timer: setTimeout(cancelPending, DOUBLE_TAP_MS) };
+      if (pending.hideCross) pending.displayTimer = setTimeout(() => {
+        pending.hideCross = false; render();
+      }, CROSS_DISPLAY_MS);
     }
+    render();
   }
   function mount() {
     board.replaceChildren(); buttons = [];
@@ -68,9 +82,10 @@
   function setBusy(value) {
     busy = value; board.setAttribute('aria-busy', String(value));
     document.querySelector('#generation').hidden = !value;
-    document.querySelectorAll('.toolbar button, select, .actions button, .sharing button').forEach(b => b.disabled = value);
+    document.querySelectorAll('.puzzle-menu button, select, .actions button').forEach(b => b.disabled = value);
     if (!value) {
       document.querySelector('#undo').disabled = !game?.history.length;
+      document.querySelector('#redo').disabled = !game?.future.length;
       document.querySelector('#reset').disabled = !game;
       document.querySelector('#share').disabled = !game;
     }
@@ -87,7 +102,7 @@
   function newPuzzle(shared = null) {
     // A new request supersedes any pending work, even if delivered programmatically.
     active?.controller.abort();
-    if (game) flushPending(); else cancelPending();
+    cancelPending();
     gesture = null;
     if (game) render();
     const id = ++requestId, controller = new AbortController();
@@ -131,7 +146,7 @@
     if (busy || gesture || !event.isPrimary || event.button !== 0) return;
     const button = event.target.closest('.cell'); if (!button) return;
     const index = Number(button.dataset.index);
-    if (pending && pending.index !== index) flushPending();
+    if (pending && pending.index !== index) { cancelPending(); render(); }
     const source = game.cells[index];
     gesture = { id: event.pointerId, index, x: event.clientX, y: event.clientY, lastX: event.clientX, lastY: event.clientY, drag: false, source, target: source === CROSS ? EMPTY : CROSS, visited: new Set() };
     board.setPointerCapture(event.pointerId); event.preventDefault();
@@ -139,7 +154,7 @@
   board.addEventListener('pointermove', event => {
     const g = gesture; if (!g || g.id !== event.pointerId) return;
     if (Math.hypot(event.clientX - g.x, event.clientY - g.y) > 8 && at(event.clientX, event.clientY) !== g.index) {
-      if (!g.drag) { cancelPending(); g.drag = true; }
+      if (!g.drag) { cancelPending(); render(); g.drag = true; }
     }
     if (g.drag && g.source !== CAT) {
       const steps = Math.max(1, Math.ceil(Math.hypot(event.clientX - g.lastX, event.clientY - g.lastY) / 4));
@@ -167,10 +182,15 @@
     // Support assistive-technology activation without duplicating pointer input.
     if (event.detail === 0 && !busy && event.target.closest('.cell')) tap(Number(event.target.closest('.cell').dataset.index));
   });
-  document.querySelector('#new').addEventListener('click', () => newPuzzle());
+  function startFromMenu(shared = null) {
+    document.querySelector('#puzzle-menu').open = false;
+    newPuzzle(shared);
+  }
+  document.querySelector('#new').addEventListener('click', () => startFromMenu());
   size.addEventListener('change', () => newPuzzle());
-  document.querySelector('#undo').addEventListener('click', () => { flushPending(); game.undo(); render(); });
-  document.querySelector('#reset').addEventListener('click', () => { flushPending(); game.reset(); render(); });
+  document.querySelector('#undo').addEventListener('click', () => { cancelPending(); game.undo(); render(); });
+  document.querySelector('#redo').addEventListener('click', () => { cancelPending(); game.redo(); render(); });
+  document.querySelector('#reset').addEventListener('click', () => { cancelPending(); game.reset(); render(); });
   document.querySelector('#share').addEventListener('click', () => {
     if (busy || !game) return;
     const local = location.protocol === 'file:';
@@ -191,7 +211,7 @@
       document.querySelector('#share-status').textContent = 'コピーできなかったため選択しました。選択した文字列をコピーしてください。';
     }
   });
-  document.querySelector('#import').addEventListener('click', () => newPuzzle(document.querySelector('#import-value').value));
+  document.querySelector('#import').addEventListener('click', () => startFromMenu(document.querySelector('#import-value').value));
   const initial = new URLSearchParams(location.hash.slice(1)).get('p');
   newPuzzle(initial);
 })();

@@ -16,26 +16,32 @@
       <div class="guide-content"><h2>猫を置く、3つのルール</h2><ol><li>各行・各列に、猫は<strong>1匹ずつ</strong>。</li><li>同じ色の領域にも、猫は<strong>1匹ずつ</strong>。</li><li>猫同士は<strong>隣り合わない</strong>。斜めもNG。</li></ol><div class="how"><p><b>タップ</b> 空白 ↔ ×</p><p><b>ダブルタップ</b> 空白に猫を置く / 猫を外す</p><p><b>空白からスワイプ</b> 通った空白に ×</p><p><b>×からスワイプ</b> 通った × を空白に</p></div><p class="note">×には猫を置けません。先にタップで空白に戻してください。<br>色の領域は太い境界線で区切られています。</p></div>
     </details>
     <section class="game" aria-label="猫のパズル">
-      <div class="toolbar"><label for="size">盤面 <select id="size"></select></label><div class="puzzle-actions"><button id="new" class="primary">新しいパズル</button><button id="reset">盤面クリア</button></div></div>
-      <div class="style-picker"><label for="mode">次の問題の生成スタイル</label><select id="mode" aria-describedby="mode-note"><option value="RandomSnake">RandomSnake · 広く入り組む領域</option><option value="Balanced">Balanced · 面積を分散</option><option value="SeedGrowth">SeedGrowth · 各猫から成長</option></select><p id="mode-note" class="note"></p></div>
+      <details id="puzzle-menu" class="guide puzzle-menu">
+        <summary>パズルの作成・共有<span class="guide-show">を表示</span><span class="guide-hide">を非表示</span></summary>
+        <div class="guide-content">
+          <div class="toolbar"><label for="size">盤面 <select id="size"></select></label><div class="puzzle-actions"><button id="new" class="primary">新しいパズル</button></div></div>
+          <div class="style-picker"><label for="mode">次の問題の生成スタイル</label><select id="mode" aria-describedby="mode-note"><option value="RandomSnake">RandomSnake · 広く入り組む領域</option><option value="Balanced">Balanced · 面積を分散</option><option value="SeedGrowth">SeedGrowth · 各猫から成長</option></select><p id="mode-note" class="note"></p></div>
+          <div class="sharing"><button id="share" disabled>この問題を共有</button></div>
+          <div id="share-output" class="sharing" hidden>
+            <label for="share-value">共有URL / 問題コード</label>
+            <textarea id="share-value" rows="3" readonly spellcheck="false"></textarea>
+            <button id="copy-share">コピー</button>
+            <p id="share-note" class="note"></p>
+          </div>
+          <details class="sharing">
+            <summary>共有された問題を開く</summary>
+            <label for="import-value">共有URLまたは問題コード</label>
+            <textarea id="import-value" rows="3" maxlength="2048" spellcheck="false" placeholder="ここに貼り付け"></textarea>
+            <button id="import">この問題を最初から解く</button>
+          </details>
+        </div>
+      </details>
       <div id="generation" hidden><span id="generation-status" role="status" aria-live="polite"></span><button id="cancel">キャンセル</button></div>
       <p id="current-mode" class="note"></p>
       <div class="meta"><span id="count">猫 0 / 5</span><span id="status" role="status" aria-live="polite">準備中…</span></div>
       <div id="board" role="group" aria-label="パズル盤面" aria-busy="true"></div>
       <div id="success" hidden role="status"><strong>みんなの居場所が見つかった！</strong><span>クリアおめでとう 🐾</span></div>
-      <div class="actions"><button id="undo" disabled>↶ ひとつ戻す</button><button id="share" disabled>この問題を共有</button></div>
-      <div id="share-output" class="sharing" hidden>
-        <label for="share-value">共有URL / 問題コード</label>
-        <textarea id="share-value" rows="3" readonly spellcheck="false"></textarea>
-        <button id="copy-share">コピー</button>
-        <p id="share-note" class="note"></p>
-      </div>
-      <details class="sharing">
-        <summary>共有された問題を開く</summary>
-        <label for="import-value">共有URLまたは問題コード</label>
-        <textarea id="import-value" rows="3" maxlength="2048" spellcheck="false" placeholder="ここに貼り付け"></textarea>
-        <button id="import">この問題を最初から解く</button>
-      </details>
+      <div class="actions"><button id="undo" disabled>↶ ひとつ戻す</button><button id="redo" disabled>↷ やり直す</button><button id="reset">盤面クリア</button></div>
       <p id="share-status" class="note" role="status" aria-live="polite"></p>
     </section>
     <footer>ひと息ついて、ひとマスずつ。</footer>
